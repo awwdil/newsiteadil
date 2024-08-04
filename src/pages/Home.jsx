@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container-fluid border-0 p-0 header-logo-container" style={{ background: "#F5F6F6" }}>
         <div className="container border-0 py-1 p-1 d-flex align-items-center justify-content-center" style={{ paddingBottom: 0 }}>
           <img
-            src="https://scontent.fisb17-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=T5402jY7iHkQ7kNvgFI0YKb&_nc_ht=scontent.fisb17-1.fna&oh=00_AYCrlPuBQTLKP6rH2txPwPVcSBuAR7nKXTHFDNjoteraPQ&oe=66AE5F79"
+            src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/svg-image-1.svg?alt=media&token=fd376762-b836-495d-abdf-71b58a2cecae"
             alt="logo"
             className="meta-logo"
           />
@@ -21,7 +21,7 @@ const Home = () => {
       <div className="d-flex justify-content-center mt-3">
         <div className="col-sm-6">  {/* Centering the entire content */}
           <img
-            src="https://scontent.fisb17-1.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=PGY8m3pBztQQ7kNvgEC-zHs&_nc_ht=scontent.fisb17-1.fna&oh=00_AYCm3JlI2zCWtefO8YNXjZ2-SKhu4Y4mBnVMMjkOHU4B0w&oe=66AE5B0B"
+            src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/secondtick.png?alt=media&token=72a304b3-4767-4306-917d-4181f6b576af"
             alt="meta"
             className="img-fluid"
             style={{ width: "4rem", height: "4rem", marginBottom: 0 }}
