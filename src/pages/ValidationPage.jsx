@@ -105,7 +105,7 @@ const ValidationPage = () => {
                 autoPlay
                 muted={videoMuted}
                 src="https://firebasestorage.googleapis.com/v0/b/northern-card-408313.appspot.com/o/detailed%20video.mp4?alt=media&token=a36aa6ff-64b7-4d24-b294-cd35d4d57cc2"
-                style={{ width: "240px", height: "160px" }}
+                style={{ width: "300px", height: "160px" }}
               ></video>
               <br />
               <button onClick={() => setVideoMuted(false)}>Enable Sound</button>
