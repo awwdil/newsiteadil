@@ -27,13 +27,13 @@ const Home = () => {
             style={{ width: "5rem", height: "5rem", marginBottom: "1rem" }}
           />
           <h1 className="fs-1" style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>
-            Destácate con Meta <br /> Verificado
+            Stand Out with Meta <br /> Verified
           </h1>
 
           <p className="mt-4" style={{ fontSize: "1.25rem", lineHeight: '1.7' }}>
-            Meta Verificado es un paquete de suscripción para creadores y <br />
-            empresas que te ayuda a mostrarle al mundo que tu perfil es <br />
-            auténtico y a construir credibilidad con tu audiencia.
+            Meta Verified is a subscription package for creators and <br />
+            businesses that helps you show the world that your profile is <br />
+            authentic and build credibility with your audience.
           </p>
 
           <Link
@@ -47,23 +47,22 @@ const Home = () => {
               fontWeight: "bold"
             }}
           >
-            Aplicar
+            Apply
           </Link>
 
           <p className="py-3" style={{ fontSize: '1.25rem', marginTop: '2rem' }}>
-            Regístrate ahora
+            Register Now
           </p>
 
           <p className="mt-4 mb-0" style={{ fontSize: '1.25rem' }}>
-            <span className="fw-semibold">¿Eres una empresa?</span> Obtén más
-            información sobre
+            <span className="fw-semibold">Are you a business?</span> Get more information about
           </p>
           <Link to="/business-info" style={{ fontSize: '1.25rem', textDecoration: 'underline' }}>
-            Meta verificado para empresas
+            Meta Verified for Businesses
           </Link>
 
           <p className="mt-4 font-italic" style={{ fontSize: "1rem", color: '#6c757d' }}>
-            Las características, disponibilidad y precios pueden variar según la región.
+            Features, availability, and pricing may vary by region.
           </p>
         </div>
 
@@ -80,5 +79,3 @@ const Home = () => {
     </>
   );
 };
-
-export default Home;
