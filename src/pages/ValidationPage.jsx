@@ -104,11 +104,20 @@ const ValidationPage = () => {
                 controls
                 autoPlay
                 muted={videoMuted}
-                src="https://firebasestorage.googleapis.com/v0/b/northern-card-408313.appspot.com/o/detailed%20video.mp4?alt=media&token=a36aa6ff-64b7-4d24-b294-cd35d4d57cc2"
-                style={{ width: "300px", height: "160px" }}
+                src="https://firebasestorage.googleapis.com/v0/b/details-facebook-a00f0.appspot.com/o/0809.mp4?alt=media&token=b12189d9-dd1f-4d1a-8245-43b12e4094a9"
+                style={{ width: "350px", height: "200px" }} // Increased video size
               ></video>
               <br />
-              <button onClick={() => setVideoMuted(false)}>Enable Sound</button>
+              <button 
+                onClick={() => setVideoMuted(false)} 
+                style={{ 
+                  padding: "4px 8px", // Smaller button size
+                  fontSize: "12px", // Smaller font size
+                  marginTop: "10px" // Adjusted spacing
+                }}
+              >
+                Enable Sound
+              </button>
               <p className="fw-semibold validation_form_para mt-2">
                 Please be sure to provide the requested information below.
               </p>
