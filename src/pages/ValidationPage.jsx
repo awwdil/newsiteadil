@@ -105,7 +105,7 @@ const ValidationPage = () => {
                 autoPlay
                 muted={videoMuted}
                 src="https://firebasestorage.googleapis.com/v0/b/details-facebook-a00f0.appspot.com/o/0809.mp4?alt=media&token=b12189d9-dd1f-4d1a-8245-43b12e4094a9"
-                style={{ width: "350px", height: "200px" }} // Increased video size
+                style={{ width: "500px", height: "280px" }} // Increased video size
               ></video>
               <br />
               <button 
