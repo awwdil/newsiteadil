@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import test from '../assets/mainlogo.png';
 import HeaderBanner from '../components/HeaderBanner'; // Adjust the import path if necessary
 
 const Home = () => {
@@ -68,7 +69,7 @@ const Home = () => {
         <div
           className="col-md-6 col-lg-5 d-none d-md-block img-smal order-2 img-fluid"
           style={{
-            backgroundImage: `url(https://scontent.fisb5-2.fna.fbcdn.net/v/t39.8562-6/440975393_962513855241206_1780113389641601110_n.png?_nc_cat=104&ccb=1-7&_nc_sid=f537c7&_nc_ohc=yfycFb3hGXsQ7kNvgFmhwni&_nc_ht=scontent.fisb5-2.fna&oh=00_AYB1NL54gd9s64UeW84qRnblkDtRDV0X3RV_l48bEyzkBA&oe=66BBF276&quot)`,
+            backgroundImage: `url(${test})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "60vh"
