@@ -19,21 +19,21 @@ const Home = () => {
       <HeaderBanner />
 
       <div className="container d-flex justify-content-between align-items-center mt-5" style={{ minHeight: "60vh" }}>
-        <div className="col-md-5 col-lg-6"> {/* Reduced width for text content */}
+        <div className="col-md-6 col-lg-7"> {/* Expand this content for larger screens */}
           <img
             src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/secondtick.png?alt=media&token=72a304b3-4767-4306-917d-4181f6b576af"
             alt="meta"
             className="img-fluid"
-            style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} // Reduced icon size
+            style={{ width: "5rem", height: "5rem", marginBottom: "1rem" }}
           />
-          <h1 className="fs-1" style={{ fontSize: '2rem', fontWeight: 'bold' }}> {/* Reduced font size */}
-            Stand Out with Meta <br /> Verified
+          <h1 className="fs-1" style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>
+            Destácate con Meta <br /> Verificado
           </h1>
 
-          <p className="mt-4" style={{ fontSize: "1rem", lineHeight: '1.5' }}> {/* Reduced font size */}
-            Meta Verified is a subscription package for creators and <br />
-            businesses that helps you show the world that your profile is <br />
-            authentic and build credibility with your audience.
+          <p className="mt-4" style={{ fontSize: "1.25rem", lineHeight: '1.7' }}>
+            Meta Verificado es un paquete de suscripción para creadores y <br />
+            empresas que te ayuda a mostrarle al mundo que tu perfil es <br />
+            auténtico y a construir credibilidad con tu audiencia.
           </p>
 
           <Link
@@ -42,38 +42,38 @@ const Home = () => {
             style={{
               background: "#0064e0",
               borderRadius: "50px",
-              padding: "10px 30px", // Reduced padding
-              fontSize: "1rem", // Reduced font size
+              padding: "12px 40px",
+              fontSize: "1.25rem",
               fontWeight: "bold"
             }}
           >
-            Apply
+            Aplicar
           </Link>
 
-          <p className="py-3" style={{ fontSize: '1rem', marginTop: '1.5rem' }}> {/* Reduced font size */}
-            Register Now
+          <p className="py-3" style={{ fontSize: '1.25rem', marginTop: '2rem' }}>
+            Regístrate ahora
           </p>
 
-          <p className="mt-4 mb-0" style={{ fontSize: '1rem' }}> {/* Reduced font size */}
-            <span className="fw-semibold">Are you a business?</span> Get more information about
+          <p className="mt-4 mb-0" style={{ fontSize: '1.25rem' }}>
+            <span className="fw-semibold">¿Eres una empresa?</span> Obtén más
+            información sobre
           </p>
-          <Link to="/business-info" style={{ fontSize: '1rem', textDecoration: 'underline' }}> {/* Reduced font size */}
-            Meta Verified for Businesses
+          <Link to="/business-info" style={{ fontSize: '1.25rem', textDecoration: 'underline' }}>
+            Meta verificado para empresas
           </Link>
 
-          <p className="mt-4 font-italic" style={{ fontSize: "0.875rem", color: '#6c757d' }}> {/* Reduced font size */}
-            Features, availability, and pricing may vary by region.
+          <p className="mt-4 font-italic" style={{ fontSize: "1rem", color: '#6c757d' }}>
+            Las características, disponibilidad y precios pueden variar según la región.
           </p>
         </div>
 
         <div
-          className="col-md-7 col-lg-6 d-none d-md-block img-smal order-2 img-fluid"
+          className="col-md-6 col-lg-5 d-none d-md-block img-smal order-2 img-fluid"
           style={{
-            backgroundImage: `url(${test})`,
-            backgroundSize: "contain", // Changed to "contain" for a smaller image
+            backgroundImage: url(${test}),
+            backgroundSize: "cover",
             backgroundPosition: "center",
-            height: "45vh", // Reduced height
-            width: "100%", 
+            height: "60vh"
           }}
         ></div>
       </div>
