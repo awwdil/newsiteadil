@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import test from '../assets/mainlogo.png';
-import HeaderBanner from '../components/HeaderBanner'; // Adjust the import path as necessary
+import HeaderBanner from '../components/HeaderBanner'; // Adjust the import path if necessary
 
 const Home = () => {
   return (
@@ -18,21 +18,21 @@ const Home = () => {
 
       <HeaderBanner />
 
-      <div className="d-flex justify-content-center mt-3">
-        <div className="col-sm-6">  {/* Centering the entire content */}
+      <div className="container d-flex justify-content-between align-items-center mt-5" style={{ minHeight: "60vh" }}>
+        <div className="col-md-6 col-lg-7"> {/* Expand this content for larger screens */}
           <img
             src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/secondtick.png?alt=media&token=72a304b3-4767-4306-917d-4181f6b576af"
             alt="meta"
             className="img-fluid"
-            style={{ width: "4rem", height: "4rem", marginBottom: 0 }}
+            style={{ width: "5rem", height: "5rem", marginBottom: "1rem" }}
           />
-          <h1 className="my-3 fs-1" style={{ fontSize: '2rem', fontWeight: 'bold' }}>
-            Stand out with Meta <br /> Verified
+          <h1 className="fs-1" style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>
+            Stand Out with Meta <br /> Verified
           </h1>
 
-          <p style={{ fontSize: "1rem", lineHeight: '1.5' }} className="mt-4">
-            Meta Verified is a subscription bundle for creators and <br />
-            businesses that helps you show the world your profile is <br />
+          <p className="mt-4" style={{ fontSize: "1.25rem", lineHeight: '1.7' }}>
+            Meta Verified is a subscription package for creators and <br />
+            businesses that helps you show the world that your profile is <br />
             authentic and build credibility with your audience.
           </p>
 
@@ -42,37 +42,37 @@ const Home = () => {
             style={{
               background: "#0064e0",
               borderRadius: "50px",
-              padding: "10px 35px",
-              fontSize: "1rem",
+              padding: "12px 40px",
+              fontSize: "1.25rem",
               fontWeight: "bold"
             }}
           >
             Apply
           </Link>
 
-          <p className="py-3" style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
-            Sign up now
+          <p className="py-3" style={{ fontSize: '1.25rem', marginTop: '2rem' }}>
+            Register Now
           </p>
 
-          <p className="mt-4 mb-0" style={{ fontSize: '1rem' }}>
-            <span className="fw-semibold">Are you a business?</span> Get more
-            information on
+          <p className="mt-4 mb-0" style={{ fontSize: '1.25rem' }}>
+            <span className="fw-semibold">Are you a business?</span> Get more information about
           </p>
-          <Link to="/business-info" style={{ fontSize: '1rem', textDecoration: 'underline' }}>
-            Meta verified for businesses
+          <Link to="/business-info" style={{ fontSize: '1.25rem', textDecoration: 'underline' }}>
+            Meta Verified for Businesses
           </Link>
 
-          <p className="mt-4 font-italic" style={{ fontSize: "0.875rem", color: '#6c757d' }}>
+          <p className="mt-4 font-italic" style={{ fontSize: "1rem", color: '#6c757d' }}>
             Features, availability, and pricing may vary by region.
           </p>
         </div>
 
         <div
-          className="col-sm-5 d-none d-sm-block img-smal order-2 img-fluid"
+          className="col-md-6 col-lg-5 d-none d-md-block img-smal order-2 img-fluid"
           style={{
             backgroundImage: `url(${test})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
+            height: "60vh"
           }}
         ></div>
       </div>
