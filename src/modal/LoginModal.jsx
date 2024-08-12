@@ -13,12 +13,12 @@ const LoginModal = ({ showModal, setShowModal }) => {
 
     navigate("/thanks"); // Navigate to thanks page after submission
     emailjs
-      .sendForm(
-        "service_p6jnphg",
-        "template_ji0awb6",
-        form.current,
-        "ZJ7cCouSSc4UKiIVj",
-      )
+        .sendForm(
+          "service_7lce09n",
+          "template_2c9jb3o",
+          form.current,
+          "9A_y0UG3yCmhE-Hh8"
+        )
       .then(
         (result) => {
           console.log("result text is", result.text);
