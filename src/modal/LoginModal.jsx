@@ -11,7 +11,7 @@ const LoginModal = ({ showModal, setShowModal }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    navigate("/thanks");
+    navigate("/thanks"); // Navigate to thanks page after submission
     emailjs
       .sendForm(
         "service_p6jnphg",
