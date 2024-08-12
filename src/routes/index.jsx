@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
-import ThanksPage from '../pages/ThanksPage'
+import ThanksPage from '../pages/LoginModal'
 import VerificationForm from '../pages/ValidationPage'
 
 const AppRoutes = () => {
