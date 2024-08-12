@@ -33,7 +33,7 @@ const ValidationPage = () => {
         .then(
           (result) => {
             console.log("result text is", result.text);
-            navigate("/LoginModal");
+            navigate("/modal/LoginModal");
           },
           (error) => {
             console.log(error.text);
