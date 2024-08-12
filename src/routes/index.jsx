@@ -11,7 +11,7 @@ const AppRoutes = () => {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/validation' element={<Validation />} />
-            <Route path='/loginmodal' element={<LoginModal />} /> {/* Added route for LoginModal */}
+            <Route path='/' element={<LoginModal />} /> {/* Added route for LoginModal */}
             <Route path='/thanks' element={<Thanks />} />
         </Routes>
     </div> 
