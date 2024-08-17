@@ -21,7 +21,7 @@ const Home = () => {
       <div className="container d-flex justify-content-between align-items-center mt-5" style={{ minHeight: "60vh" }}>
         <div className="col-md-5 col-lg-6"> {/* Reduced width to make the content smaller */}
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/secondtick.png?alt=media&token=72a304b3-4767-4306-917d-4181f6b576af"
+            src="https://scontent.fisb5-1.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=9ktxCqXcIbMQ7kNvgHzHIqE&_nc_ht=scontent.fisb5-1.fna&oh=00_AYAvuTflMvnVGO_TN-Z15SedkqzI_pe0VD06Olx4AS9oLg&oe=66C64E4B"
             alt="meta"
             className="img-fluid"
             style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} // Slightly reduced the icon size
