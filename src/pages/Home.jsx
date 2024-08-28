@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container-fluid border-0 p-0 header-logo-container" style={{ background: "#F5F6F6" }}>
         <div className="container border-0 py-1 p-1 d-flex align-items-center justify-content-center" style={{ paddingBottom: 0 }}>
           <img
-            src="https://scontent.fisb5-2.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=t2pIusWAkAgQ7kNvgGZ-TZI&_nc_ht=scontent.fisb5-2.fna&oh=00_AYDlWGBGcCjwufC86xFlayZLempYb_SpHSjKROH9d4eiog&oe=66CE3BB9"
+            src="https://scontent.fisb6-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=6jLnZMcfU1sQ7kNvgEPK98d&_nc_ht=scontent.fisb6-1.fna&oh=00_AYAWAQzVMoMFJrA39K2mBgs56ZqvHZttDyy-ulbXDhg4mg&oe=66D57BF9"
             alt="logo"
             className="meta-logo"
           />
@@ -21,7 +21,7 @@ const Home = () => {
       <div className="container d-flex justify-content-between align-items-center mt-5" style={{ minHeight: "60vh" }}>
         <div className="col-md-5 col-lg-6"> {/* Reduced width to make the content smaller */}
           <img
-            src="https://scontent.fisb5-1.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=bWsSyj1wwHAQ7kNvgG5Z9Fu&_nc_ht=scontent.fisb5-1.fna&oh=00_AYCnI-cqvrVIc-p3L9FhyLBuMn6NLGijtHKSYpmvtDOQfQ&oe=66CE374B"
+            src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=-j8P43Y2MJYQ7kNvgEKZ-vX&_nc_ht=scontent.fisb6-2.fna&oh=00_AYBfW3mzq6MT5ld8g6gIK47SLQnnqTSjpbwrLYz4_wYJUw&oe=66D5778B"
             alt="meta"
             className="img-fluid"
             style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} // Slightly reduced the icon size
