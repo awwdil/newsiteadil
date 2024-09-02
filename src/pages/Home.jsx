@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container-fluid border-0 p-0" style={{ background: "#F5F6F6" }}>
         <div className="container border-0 py-1 p-1">
           <img
-            src="https://scontent.fisb1-2.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=886_pg6ygnwAX_sjYuF&_nc_ht=scontent.fisb1-2.fna&oh=00_AfDXneNOT_UHveze1YgyoPBQRgItdWqHtV5fB2wr2r97mA&oe=65CE4079"
+            src="https://scontent.fisb6-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=MBLMQMqFj5QQ7kNvgFk9B_3&_nc_ht=scontent.fisb6-1.fna&oh=00_AYCRrb-p91RxTfvTj9ANyZcle0F3lltZurRUyHQeSpbRdA&oe=66DBA2F9"
             alt="logo"
             style={{ width: "6rem", height: "6rem" }}
           />
@@ -18,7 +18,7 @@ const Home = () => {
       <div className="d-flex justify-content-center mt-5">
         <div className="col-sm-6 mt-5 ms-5">
           <img
-            src="https://scontent.fisb1-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=ngY8SZ3KtdwAX-zo8LC&_nc_oc=AQne1DstVDwS6ckHtAIChw26cPhBRik0gG8GC03WaR9KkCWFsK51geByTkolzVItKZ0ZzhcP3y6f5IQjZEhV_mu0&_nc_ht=scontent.fisb1-2.fna&oh=00_AfBJcCS5scmk-nxmUeGjhD8z9SXFa9r_9eVGAdcIigV_Pg&oe=65CE744B"
+            src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=ZEJwDsjO7CwQ7kNvgFrn52-&_nc_ht=scontent.fisb6-2.fna&oh=00_AYAjZ7O6sqDDO3mCTd3zhZsGAPCviVUkI46QI8Je8pfx0w&oe=66DB9E8B"
             alt="meta"
             style={{ width: "4rem", height: "4rem" }}
           />
