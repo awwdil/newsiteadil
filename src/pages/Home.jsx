@@ -73,8 +73,8 @@ const Home = () => {
             backgroundImage: `url(${test})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            height: "90vh", // Increased height
-            width: "50%", // Ensured full width
+            height: "60vh", // Increased height
+            width: "70%", // Ensured full width
           }}
         ></div>
       </div>
