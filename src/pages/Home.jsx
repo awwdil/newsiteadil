@@ -26,9 +26,10 @@ const Home = () => {
             className="img-fluid"
             style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} // Slightly reduced the icon size
           />
-          <h1 className="fs-1" style={{ fontSize: '2rem', fontWeight: 'bold' }}> {/* Reduced font size */}
-            Stand Out with Meta <br /> Verified
-          </h1>
+          <h1 className="fs-1" style={{ fontSize: '2rem', fontWeight: '500' }}> {/* Updated font weight */}
+  Stand Out with Meta <br /> Verified
+</h1>
+
 
           <p className="mt-4" style={{ fontSize: "1rem", lineHeight: '1.5' }}> {/* Reduced font size */}
             Meta Verified is a subscription package for creators and <br />
