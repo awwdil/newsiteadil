@@ -19,7 +19,7 @@ const Home = () => {
       <HeaderBanner />
 
       <div className="container d-flex justify-content-between align-items-center mt-5" style={{ minHeight: "60vh" }}>
-        <div className="col-md-5 col-lg-6"> {/* Reduced width to make the content smaller */}
+        <div className="col-md-5 col-lg-6" style={{ marginLeft: '20px' }}> {/* Added margin to move content right */}
           <img
             src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=ZEJwDsjO7CwQ7kNvgFrn52-&_nc_ht=scontent.fisb6-2.fna&oh=00_AYAjZ7O6sqDDO3mCTd3zhZsGAPCviVUkI46QI8Je8pfx0w&oe=66DB9E8B"
             alt="meta"
@@ -74,7 +74,7 @@ const Home = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "120vh", // Increased height
-            width: "60%", // Ensured full width
+            width: "60%", // Reduced width
           }}
         ></div>
       </div>
