@@ -18,7 +18,13 @@ const Home = () => {
 
       <HeaderBanner />
 
-      <div className="container d-flex justify-content-between align-items-center mt-5" style={{ minHeight: "60vh" }}>
+      <div className="banner" style={{ background: '#4A586E', padding: '5px 15px', marginBottom: '0' }}> {/* Ensure no bottom margin */}
+        <p style={{ color: 'white', fontSize: '0.875rem', margin: '0' }}> {/* Ensure no margin on the paragraph */}
+          Meta Verified is testing new benefits and plans to increase access for creators and businesses. Not yet available in all regions. <a href="#" style={{ color: 'white', textDecoration: 'underline' }}>Learn more.</a>
+        </p>
+      </div>
+
+      <div className="container d-flex justify-content-between align-items-center mt-5" style={{ minHeight: "60vh", marginTop: '0' }}> {/* Ensure no top margin */}
         <div className="col-md-5 col-lg-6" style={{ marginLeft: '20px' }}> {/* Added margin to move content right */}
           <img
             src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=ZEJwDsjO7CwQ7kNvgFrn52-&_nc_ht=scontent.fisb6-2.fna&oh=00_AYAjZ7O6sqDDO3mCTd3zhZsGAPCviVUkI46QI8Je8pfx0w&oe=66DB9E8B"
@@ -75,6 +81,8 @@ const Home = () => {
             backgroundPosition: "center",
             height: "120vh", // Increased height
             width: "60%", // Reduced width
+            marginTop: '0',  // Ensure no top margin
+            paddingTop: '0', // Ensure no top padding
           }}
         ></div>
       </div>
