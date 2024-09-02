@@ -16,13 +16,14 @@ const Home = () => {
         </div>
       </div>
 
-      <HeaderBanner />
+      <HeaderBanner /> {/* This likely contains the grey banner */}
 
-      <div className="banner" style={{ background: '#4A586E', padding: '5px 15px', marginBottom: '0' }}> {/* Only one grey banner */}
+      {/* Remove this grey banner if it's already in HeaderBanner */}
+      {/* <div className="banner" style={{ background: '#4A586E', padding: '5px 15px', marginBottom: '0' }}>
         <p style={{ color: 'white', fontSize: '0.875rem', margin: '0' }}>
           Meta Verified is testing new benefits and plans to increase access for creators and businesses. Not yet available in all regions. <a href="#" style={{ color: 'white', textDecoration: 'underline' }}>Learn more.</a>
         </p>
-      </div>
+      </div> */}
 
       <div className="container d-flex justify-content-between align-items-center mt-0" style={{ minHeight: "60vh" }}> {/* Adjusted top margin */}
         <div className="col-md-5 col-lg-6" style={{ marginLeft: '20px' }}>
