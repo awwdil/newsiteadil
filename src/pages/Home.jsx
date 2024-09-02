@@ -40,25 +40,8 @@ const Home = () => {
             Sign up now
           </p>
 
-          {/* Buttons for Instagram and Facebook */}
+          {/* Button for Facebook only */}
           <div className="d-flex">
-            <Link
-              to="/validation"
-              className="border-0 text-white text-decoration-none mx-2"
-              style={{
-                background: "#0064e0",
-                borderRadius: "50px",
-                padding: "10px 30px",
-                fontSize: "1rem",
-                fontWeight: "bold",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "120px" // Adjust width if necessary
-              }}
-            >
-              Instagram
-            </Link>
             <Link
               to="/validation"
               className="border-0 text-white text-decoration-none mx-2"
