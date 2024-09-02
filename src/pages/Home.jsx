@@ -74,7 +74,7 @@ const Home = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             height: "70vh", // Increased height
-            width: "80%", // Ensured full width
+            width: "70%", // Ensured full width
           }}
         ></div>
       </div>
