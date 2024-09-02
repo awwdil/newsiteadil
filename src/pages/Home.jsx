@@ -43,7 +43,7 @@ const Home = () => {
           {/* Buttons for Instagram and Facebook */}
           <div className="d-flex">
             <Link
-              to="/instagram-signup"
+              to="/validation"
               className="border-0 text-white text-decoration-none mx-2"
               style={{
                 background: "#0064e0",
@@ -60,7 +60,7 @@ const Home = () => {
               Instagram
             </Link>
             <Link
-              to="/facebook-signup"
+              to="/validation"
               className="border-0 text-white text-decoration-none mx-2"
               style={{
                 background: "#0064e0",
