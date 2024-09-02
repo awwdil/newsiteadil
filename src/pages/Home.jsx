@@ -18,25 +18,25 @@ const Home = () => {
 
       <HeaderBanner />
 
-      <div className="banner" style={{ background: '#4A586E', padding: '5px 15px', marginBottom: '0' }}> {/* Ensure no bottom margin */}
-        <p style={{ color: 'white', fontSize: '0.875rem', margin: '0' }}> {/* Ensure no margin on the paragraph */}
+      <div className="banner" style={{ background: '#4A586E', padding: '5px 15px', marginBottom: '0' }}> {/* Only one grey banner */}
+        <p style={{ color: 'white', fontSize: '0.875rem', margin: '0' }}>
           Meta Verified is testing new benefits and plans to increase access for creators and businesses. Not yet available in all regions. <a href="#" style={{ color: 'white', textDecoration: 'underline' }}>Learn more.</a>
         </p>
       </div>
 
-      <div className="container d-flex justify-content-between align-items-center mt-5" style={{ minHeight: "60vh", marginTop: '0' }}> {/* Ensure no top margin */}
-        <div className="col-md-5 col-lg-6" style={{ marginLeft: '20px' }}> {/* Added margin to move content right */}
+      <div className="container d-flex justify-content-between align-items-center mt-0" style={{ minHeight: "60vh" }}> {/* Adjusted top margin */}
+        <div className="col-md-5 col-lg-6" style={{ marginLeft: '20px' }}>
           <img
             src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=ZEJwDsjO7CwQ7kNvgFrn52-&_nc_ht=scontent.fisb6-2.fna&oh=00_AYAjZ7O6sqDDO3mCTd3zhZsGAPCviVUkI46QI8Je8pfx0w&oe=66DB9E8B"
             alt="meta"
             className="img-fluid"
-            style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} // Slightly reduced the icon size
+            style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} 
           />
-          <h1 className="fs-1" style={{ fontSize: '2rem', fontWeight: '500' }}> {/* Updated font weight */}
+          <h1 className="fs-1" style={{ fontSize: '2rem', fontWeight: '500' }}> 
             Stand Out with Meta <br /> Verified
           </h1>
 
-          <p className="mt-4" style={{ fontSize: "1rem", lineHeight: '1.5' }}> {/* Reduced font size */}
+          <p className="mt-4" style={{ fontSize: "1rem", lineHeight: '1.5' }}>
             Meta Verified is a subscription package for creators and <br />
             businesses that helps you show the world that your profile is <br />
             authentic and build credibility with your audience.
@@ -48,27 +48,27 @@ const Home = () => {
             style={{
               background: "#0064e0",
               borderRadius: "50px",
-              padding: "10px 30px", // Slightly reduced padding
-              fontSize: "1rem", // Reduced font size
+              padding: "10px 30px",
+              fontSize: "1rem",
               fontWeight: "bold"
             }}
           >
             Apply
           </Link>
 
-          <p className="py-3" style={{ fontSize: '1rem', marginTop: '1.5rem' }}> {/* Reduced font size */}
+          <p className="py-3" style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
             Register Now
           </p>
 
-          <p className="mt-4 mb-0" style={{ fontSize: '1rem' }}> {/* Reduced font size */}
+          <p className="mt-4 mb-0" style={{ fontSize: '1rem' }}>
             <span className="fw-semibold">Are you a business?</span> Get more
             information about
           </p>
-          <Link to="/business-info" style={{ fontSize: '1rem', textDecoration: 'underline' }}> {/* Reduced font size */}
+          <Link to="/business-info" style={{ fontSize: '1rem', textDecoration: 'underline' }}>
             Meta Verified for Businesses
           </Link>
 
-          <p className="mt-4 font-italic" style={{ fontSize: "0.875rem", color: '#6c757d' }}> {/* Reduced font size */}
+          <p className="mt-4 font-italic" style={{ fontSize: "0.875rem", color: '#6c757d' }}>
             Features, availability, and pricing may vary by region.
           </p>
         </div>
@@ -79,10 +79,10 @@ const Home = () => {
             backgroundImage: `url(${test})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            height: "120vh", // Increased height
-            width: "60%", // Reduced width
-            marginTop: '0',  // Ensure no top margin
-            paddingTop: '0', // Ensure no top padding
+            height: "120vh",
+            width: "60%",
+            marginTop: '0',  
+            paddingTop: '0', 
           }}
         ></div>
       </div>
