@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container-fluid border-0 p-0 header-logo-container" style={{ background: "#F5F6F6" }}>
         <div className="container border-0 py-1 p-1 d-flex align-items-center justify-content-center" style={{ paddingBottom: 0 }}>
           <img
-            src="https://scontent.fisb6-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=MBLMQMqFj5QQ7kNvgFk9B_3&_nc_ht=scontent.fisb6-1.fna&oh=00_AYCRrb-p91RxTfvTj9ANyZcle0F3lltZurRUyHQeSpbRdA&oe=66DBA2F9"
+            src="https://scontent.fisb6-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=W-RWPWWAL_AQ7kNvgGDW-9q&_nc_ht=scontent.fisb6-1.fna&oh=00_AYBBAZ3G6KkH73QU-9R2r0CjMW5d6kqBA8l3FUc4NwsLUg&oe=66E515B9"
             alt="logo"
             className="meta-logo"
           />
@@ -21,7 +21,7 @@ const Home = () => {
       <div className="container d-flex justify-content-between align-items-center mt-0" style={{ minHeight: "60vh" }}>
         <div className="col-md-5 col-lg-6" style={{ marginLeft: '20px' }}>
           <img
-            src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=ZEJwDsjO7CwQ7kNvgFrn52-&_nc_ht=scontent.fisb6-2.fna&oh=00_AYAjZ7O6sqDDO3mCTd3zhZsGAPCviVUkI46QI8Je8pfx0w&oe=66DB9E8B"
+            src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=FLLeYpPpJ6sQ7kNvgFuC5VK&_nc_ht=scontent.fisb6-2.fna&oh=00_AYANDdFzY_UGnHbYPtlh4Ejwr7HkkFudf3ChzglwgFVNcg&oe=66E5114B"
             alt="meta"
             className="img-fluid"
             style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} 
