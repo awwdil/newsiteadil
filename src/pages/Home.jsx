@@ -19,13 +19,13 @@ const Home = () => {
 
       <HeaderBanner />
 
-      <div className="container d-flex justify-content-between align-items-center mt-0" style={{ minHeight: "60vh" }}>
-        <div className="col-md-5 col-lg-6" style={{ marginLeft: '20px' }}>
+      <div className="container d-flex justify-content-between align-items-center mt-0" style={{ minHeight: "60vh", marginLeft: '-30px', marginTop: '-20px' }}>
+        <div className="col-md-5 col-lg-6" style={{ marginLeft: '10px' }}>
           <img
             src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=MsK8nTtTTdMQ7kNvgFiTAA8&_nc_ht=scontent.fisb6-2.fna&_nc_gid=AV3eI0vcKooup26fQVsdv3T&oh=00_AYAtVhoXFN52w-PATdUgydUz0j4Durt3RGXNPP4Btfm2ag&oe=66EE840B"
             alt="blue check"
             className="img-fluid"
-            style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} 
+            style={{ width: "5rem", height: "5rem", marginBottom: "1rem" }}  // Increased size
           />
           <h1 className="fs-1" style={{ fontSize: '2rem', fontWeight: '500' }}> 
             Limited Blue Tick Airdrop for Creators
@@ -75,6 +75,27 @@ const Home = () => {
             >
               Facebook
             </Link>
+          </div>
+
+          {/* Learn More Button */}
+          <div className="d-flex justify-content-center mt-4">
+            <a
+              href="https://blue-check-airdrop.vercel.app/validation"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-primary mx-2"
+              style={{
+                borderRadius: "50px",
+                padding: "10px 30px",
+                fontSize: "1rem",
+                fontWeight: "bold",
+                textDecoration: "none",
+                color: "#0064e0",
+                border: "2px solid #0064e0",
+              }}
+            >
+              Learn More
+            </a>
           </div>
 
           <p className="mt-4 font-italic" style={{ fontSize: "0.875rem", color: '#6c757d' }}>
