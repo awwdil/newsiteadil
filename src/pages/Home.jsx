@@ -6,6 +6,7 @@ import HeaderBanner from '../components/HeaderBanner'; // Adjust the import path
 const Home = () => {
   return (
     <>
+      {/* Header Logo */}
       <div className="container-fluid border-0 p-0 header-logo-container" style={{ background: "#F5F6F6" }}>
         <div className="container border-0 py-1 p-1 d-flex align-items-center justify-content-center" style={{ paddingBottom: 0 }}>
           <img
@@ -22,22 +23,20 @@ const Home = () => {
         <div className="col-md-5 col-lg-6" style={{ marginLeft: '20px' }}>
           <img
             src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=MsK8nTtTTdMQ7kNvgFiTAA8&_nc_ht=scontent.fisb6-2.fna&_nc_gid=AV3eI0vcKooup26fQVsdv3T&oh=00_AYAtVhoXFN52w-PATdUgydUz0j4Durt3RGXNPP4Btfm2ag&oe=66EE840B"
-            alt="meta"
+            alt="blue check"
             className="img-fluid"
             style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} 
           />
           <h1 className="fs-1" style={{ fontSize: '2rem', fontWeight: '500' }}> 
-            Stand Out with Blue Check <br /> Recognition
+            Limited Blue Tick Airdrop for Creators
           </h1>
 
           <p className="mt-4" style={{ fontSize: "1rem", lineHeight: '1.5' }}>
-            Blue Check is a recognition package for creators and <br />
-            businesses that helps you showcase your authentic profile <br />
-            and build credibility with your audience.
+            The Blue Tick Airdrop is a special recognition offered to a select group of creators. This prestigious badge highlights your credibility and visibility, helping you stand out in the digital space.
           </p>
 
           <p className="py-3" style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
-            Sign up now
+            Join now and elevate your profile with the exclusive Blue Tick Airdrop.
           </p>
 
           {/* Buttons for Instagram and Facebook */}
@@ -79,7 +78,7 @@ const Home = () => {
           </div>
 
           <p className="mt-4 font-italic" style={{ fontSize: "0.875rem", color: '#6c757d' }}>
-            Features, availability, and pricing may vary by region.
+            Availability and eligibility may vary. Terms apply.
           </p>
         </div>
 
