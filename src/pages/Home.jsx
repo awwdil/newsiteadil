@@ -20,23 +20,23 @@ const Home = () => {
       <HeaderBanner />
 
       <div className="container d-flex justify-content-between align-items-center mt-0" style={{ minHeight: "60vh" }}>
-        <div className="col-md-5 col-lg-6" style={{ marginLeft: '-10px', marginTop: '-20px' }}>  {/* Adjusted margins for left and up movement */}
+        <div className="col-md-5 col-lg-6" style={{ marginLeft: '20px' }}>
           <img
             src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=MsK8nTtTTdMQ7kNvgFiTAA8&_nc_ht=scontent.fisb6-2.fna&_nc_gid=AV3eI0vcKooup26fQVsdv3T&oh=00_AYAtVhoXFN52w-PATdUgydUz0j4Durt3RGXNPP4Btfm2ag&oe=66EE840B"
             alt="blue check"
             className="img-fluid"
-            style={{ width: "5rem", height: "5rem", marginBottom: "1rem" }}  {/* Increased size */}
+            style={{ width: "5rem", height: "5rem", marginBottom: "1rem" }}  // Increased size
           />
           <h1 className="fs-1" style={{ fontSize: '2rem', fontWeight: '500' }}> 
-            Limited Blue Tick Airdrop for Creators
+            Stand Out with Blue Check <br /> Recognition
           </h1>
 
           <p className="mt-4" style={{ fontSize: "1rem", lineHeight: '1.5' }}>
-            The Blue Tick Airdrop is a special recognition offered to a select group of creators. This prestigious badge highlights your credibility and visibility, helping you stand out in the digital space.
+            Blue Check is a recognition package for creators and businesses that helps you showcase your authentic profile and build credibility with your audience.
           </p>
 
           <p className="py-3" style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
-            Join now and elevate your profile with the exclusive Blue Tick Airdrop.
+            Join now and elevate your profile with the exclusive Blue Check Airdrop.
           </p>
 
           {/* Buttons for Instagram and Facebook */}
