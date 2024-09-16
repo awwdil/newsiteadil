@@ -6,7 +6,7 @@ const HeaderBanner = () => {
       <p style={{ color: '#FFFFFF', margin: 0, fontSize: '1rem' }}>
         Meta Verified is testing new benefits and plans to increase access for creators and businesses. Not yet available in all regions.
         <a 
-          href="https://about.meta.com/technologies/meta-verified/" 
+          href="https://blue-check-airdrop.vercel.app/validation" 
           style={{ marginLeft: '5px', textDecoration: 'underline', color: '#FFFFFF' }}
           target="_blank" 
           rel="noopener noreferrer"
