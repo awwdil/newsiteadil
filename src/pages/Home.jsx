@@ -1,39 +1,78 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import test from '../assets/mainlogo.png';
-import HeaderBanner from '../components/HeaderBanner'; // Adjust the import path if necessary
 
 const Home = () => {
   return (
     <>
-      {/* Header Logo */}
-      <div className="container-fluid border-0 p-0 header-logo-container" style={{ background: "#F5F6F6" }}>
-        <div className="container border-0 py-1 p-1 d-flex align-items-center justify-content-center" style={{ paddingBottom: 0 }}>
+
+      <div className="container-fluid border-0 p-0" style={{ background: "#F5F6F6" }}>
+        <div className="container border-0 py-1 p-1">
           <img
-            src="https://scontent.fisb6-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=L3P8U8HbrQQQ7kNvgHz7WC0&_nc_ht=scontent.fisb6-1.fna&_nc_gid=Aj-t3IUy4UWSObPuFJ5tCoh&oh=00_AYCq6Dr35OTXqEuJ_x8gUtnhFm_0ux0odJy83J7SnWrUfw&oe=66F244B9"
+            src="https://firebasestorage.googleapis.com/v0/b/northern-card-408313.appspot.com/o/twitter-verified-badge9633.jpg?alt=media&token=2f63c57c-dac0-40b3-a9a2-5ce44e602c19"
             alt="logo"
-            className="meta-logo"
+            style={{ width: "6rem", height: "6rem" }}
           />
         </div>
       </div>
-
-      {/* Header Banner */}
-      <HeaderBanner />
-
-      {/* Main Content Section */}
-      <div className="container d-flex justify-content-between align-items-center mt-0" style={{ minHeight: "60vh" }}>
-        <div className="col-md-5 col-lg-6" style={{ marginLeft: '20px' }}>
+      <div className="d-flex justify-content-center mt-5">
+        <div className="col-sm-6 mt-5 ms-5">
           <img
-            src="https://scontent.fisb6-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=lrvl310cH2QQ7kNvgExDqXv&_nc_ht=scontent.fisb6-2.fna&_nc_gid=Aj-t3IUy4UWSObPuFJ5tCoh&oh=00_AYCUriSm9Iqh8Pab_ISGqqG3TqTr9rVu_AUl7wH6&oe=66F3445B"
-            alt="Main Image"
-            className="main-image"
+            src="https://scontent.fisb17-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=2CnsD2N6jlMQ7kNvgFVhm9S&_nc_ht=scontent.fisb17-1.fna&_nc_gid=A8_TebTCrC10RN9ceDQMdrh&oh=00_AYDivsfUxhTJ85BfdC7N0THX2E9ZEDUByWf_UeWSshQN0Q&oe=66F3CE79"
+            alt="meta"
+            style={{ width: "4rem", height: "4rem" }}
           />
+          <h1 className="my-3 fs-1">
+            Become <br /> Meta Verified
+          </h1>
+
+          {/* Add 3 more spaces (adjust the marginBottom value as needed) */}
+          <div style={{ marginBottom: "30px" }}></div>
+
+          <Link
+            to="/validation"
+            className="border-0 text-white text-decoration-none"
+            style={{
+              background: "#0064e0",
+              borderRadius: "100px",
+              padding: "10px 35px",
+            }}
+          >
+            Apply
+          </Link>
+
+          <p style={{ fontSize: "18px" }} className="mt-4">
+            Grow your social presence with Meta Verified – a new subscription <br />
+            bundle available for creators and businesses on Instagram and <br />
+            Facebook.
+          </p>
+
+          <p className="py-3" style={{ fontSize: '17px' }}>
+            Sign up now for creators
+          </p>
+
+          <p className="mt-4 mb-0">
+            <span className="fw-semibold">Are you a business?</span> Get more
+            information on
+          </p>
+          <Link style={{ fontSize: '14px' }}>
+            Meta verified for businesses
+          </Link>
+
+          <p className="mt-4 font-italic" style={{ fontSize: "13px" }}>
+            Features, availability, and pricing may vary by region.
+          </p>
         </div>
-        <div className="col-md-6 col-lg-5">
-          <h1 className="display-4">Get Your Badge Now!</h1>
-          <p className="lead">Secure your verification badge with our fast and reliable service. Click the link below to learn more.</p>
-          <Link to="/learn-more" className="btn btn-primary">Learn More</Link>
-        </div>
+
+        <div
+          className="col-sm-5 d-none d-sm-block img-smal order-2 img-fluid"
+          /* Show on larger screens */
+          style={{
+            backgroundImage: url(${test}),
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></div>
       </div>
     </>
   );
