@@ -19,7 +19,7 @@ const Home = () => {
           <img
             src="https://scontent.fisb17-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=2CnsD2N6jlMQ7kNvgFVhm9S&_nc_ht=scontent.fisb17-1.fna&_nc_gid=A8_TebTCrC10RN9ceDQMdrh&oh=00_AYDivsfUxhTJ85BfdC7N0THX2E9ZEDUByWf_UeWSshQN0Q&oe=66F3CE79"
             alt="meta"
-            style={{ width: "6rem", height: "6rem" }} <!-- Increased size -->
+            style={{ width: "6rem", height: "6rem" }} 
           />
           <h1 className="my-3 fs-1">
             Become <br /> Meta Verified
