@@ -5,7 +5,6 @@ import test from '../assets/mainlogo.png';
 const Home = () => {
   return (
     <>
-
       <div className="container-fluid border-0 p-0" style={{ background: "#F5F6F6" }}>
         <div className="container border-0 py-1 p-1">
           <img
@@ -68,7 +67,7 @@ const Home = () => {
           className="col-sm-5 d-none d-sm-block img-smal order-2 img-fluid"
           /* Show on larger screens */
           style={{
-            backgroundImage: url(${test}),
+            backgroundImage: `url(${test})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
