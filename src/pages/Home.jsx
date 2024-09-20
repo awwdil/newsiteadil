@@ -17,7 +17,7 @@ const Home = () => {
       <div className="d-flex justify-content-center mt-5">
         <div className="col-sm-6 mt-5 ms-5">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/northern-card-408313.appspot.com/o/twitter-verified-badge9633.jpg?alt=media&token=2f63c57c-dac0-40b3-a9a2-5ce44e602c19"
+            src="https://scontent.fisb17-1.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=lrvl310cH2QQ7kNvgF9N-8R&_nc_ht=scontent.fisb17-1.fna&_nc_gid=A8_TebTCrC10RN9ceDQMdrh&oh=00_AYBZyykYjrX-dCJc3GZm6bAclpAlkoOm9r074HZaC2j8jg&oe=66F3CA0B"
             alt="meta"
             style={{ width: "6rem", height: "6rem" }} 
           />
