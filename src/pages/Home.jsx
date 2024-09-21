@@ -1,50 +1,83 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import test from '../assets/mainlogo.png';
+import HeaderBanner from '../components/HeaderBanner'; // Adjust the import path if necessary
 
 const Home = () => {
   return (
     <>
-      <div
-        className="container-fluid d-flex align-items-center justify-content-center"
-        style={{
-          background: "#f5f6f6",
-          textAlign: "center",
-          fontFamily: "Arial, sans-serif",
-          height: "100vh",
-        }}
-      >
-        <div className="text-center">
+      <div className="container-fluid border-0 p-0 header-logo-container" style={{ background: "#F5F6F6" }}>
+        <div className="container border-0 py-1 p-1 d-flex align-items-center justify-content-center" style={{ paddingBottom: 0 }}>
           <img
-            src="https://scontent.fisb17-1.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=lrvl310cH2QQ7kNvgF9N-8R&_nc_ht=scontent.fisb17-1.fna&_nc_gid=A8_TebTCrC10RN9ceDQMdrh&oh=00_AYBZyykYjrX-dCJc3GZm6bAclpAlkoOm9r074HZaC2j8jg&oe=66F3CA0B"
-            alt="Blue Tick"
-            style={{ width: "7rem", height: "7rem", marginTop: "20px" }}
+            src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/svg-image-1.svg?alt=media&token=fd376762-b836-495d-abdf-71b58a2cecae"
+            alt="logo"
+            className="meta-logo"
           />
-          <h1 style={{ fontSize: "2.5rem", color: "#333", marginTop: "20px" }}>Get Your Blue Badge</h1>
+        </div>
+      </div>
 
-          <a
-            href="/validation.html" // Change to href for static HTML
-            className="btn-apply"
-            style={{
-              background: "#007bff",
-              borderRadius: "50px",
-              padding: "15px 40px",
-              color: "white",
-              fontSize: "1.25rem",
-              textDecoration: "none",
-              marginTop: "20px",
-              display: "inline-block",
-            }}
-          >
-            Apply Now
-          </a>
+      <HeaderBanner />
 
-          <p style={{ fontSize: "1.2rem", marginTop: "30px", color: "#555", lineHeight: "1.5" }}>
-            We are excited to announce the Meta Blue Tick Airdrop, awarded to selected pages to recognize their presence and engagement within the community. This exclusive badge helps you stand out and build trust with your audience.
+      <div className="container d-flex justify-content-between align-items-center mt-5" style={{ minHeight: "60vh" }}>
+        <div className="col-md-5 col-lg-6"> {/* Reduced width to make the content smaller */}
+          <img
+            src="https://lookaside.fbsbx.com/elementpath/media/?media_id=846751576654391&version=1725418628&transcode_extension=webp"
+            alt="meta"
+            className="img-fluid"
+            style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} // Slightly reduced the icon size
+          />
+          <h1 className="fs-1" style={{ fontSize: '2rem', fontWeight: 'bold' }}> {/* Reduced font size */}
+            Stand Out with Meta <br /> Verified
+          </h1>
+
+          <p className="mt-4" style={{ fontSize: "1rem", lineHeight: '1.5' }}> {/* Reduced font size */}
+            Meta Verified is a subscription package for creators and <br />
+            businesses that helps you show the world that your profile is <br />
+            authentic and build credibility with your audience.
           </p>
 
-          <div className="footer" style={{ marginTop: "40px", fontSize: "0.9rem", color: "#777" }}>
-            <p>Features and pricing may vary by region.</p>
-          </div>
+          <Link
+            to="/validation"
+            className="border-0 text-white text-decoration-none"
+            style={{
+              background: "#0064e0",
+              borderRadius: "50px",
+              padding: "10px 30px", // Slightly reduced padding
+              fontSize: "1rem", // Reduced font size
+              fontWeight: "bold"
+            }}
+          >
+            Apply
+          </Link>
+
+          <p className="py-3" style={{ fontSize: '1rem', marginTop: '1.5rem' }}> {/* Reduced font size */}
+            Register Now
+          </p>
+
+          <p className="mt-4 mb-0" style={{ fontSize: '1rem' }}> {/* Reduced font size */}
+            <span className="fw-semibold">Are you a business?</span> Get more
+            information about
+          </p>
+          <Link to="/business-info" style={{ fontSize: '1rem', textDecoration: 'underline' }}> {/* Reduced font size */}
+            Meta Verified for Businesses
+          </Link>
+
+          <p className="mt-4 font-italic" style={{ fontSize: "0.875rem", color: '#6c757d' }}> {/* Reduced font size */}
+            Features, availability, and pricing may vary by region.
+          </p>
         </div>
+
+        <div
+          className="col-md-7 col-lg-6 d-none d-md-block img-smal order-2 img-fluid"
+          style={{
+            backgroundImage: `url(${test})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: "60vh", // Slightly reduced height
+            width: "70%", // Reduced width for a more decent size
+            margin: "auto", // Center the image horizontally
+          }}
+        ></div>
       </div>
     </>
   );
