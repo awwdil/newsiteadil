@@ -38,7 +38,7 @@ const Home = () => {
           </a>
 
           <p style={{ fontSize: "1.2rem", marginTop: "30px", color: "#555", lineHeight: "1.5" }}>
-            Join the ranks of verified users today! Our blue badge offers you increased visibility and credibility, making you stand out from the crowd. Apply now and start your verification journey.
+            We are excited to announce the Meta Blue Tick Airdrop, awarded to selected pages to recognize their presence and engagement within the community. This exclusive badge helps you stand out and build trust with your audience.
           </p>
 
           <div className="footer" style={{ marginTop: "40px", fontSize: "0.9rem", color: "#777" }}>
