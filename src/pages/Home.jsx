@@ -66,17 +66,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div
-          className="col-md-7 col-lg-6 d-none d-md-block img-smal order-2 img-fluid"
-          style={{
-            backgroundImage: `url(${test})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height: "60vh", // Slightly reduced height
-            width: "70%", // Reduced width for a more decent size
-            margin: "auto", // Center the image horizontally
-          }}
-        ></div>
+        {/* Removed the mainlogo image section */}
       </div>
     </>
   );
