@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import test from '../assets/mainlogo.png';
 import HeaderBanner from '../components/HeaderBanner'; // Adjust the import path if necessary
 
 const Home = () => {
