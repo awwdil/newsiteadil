@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './style.css'; // Ensure this path is correct for your styles
+import './style.css'; // Ensure the path is correct for your styles
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,7 +15,6 @@ const Home = () => {
         />
         <h1 className="main-title">Get Verified with Meta Blue Badge</h1>
         <p className="main-subtitle">Show the world you're authentic and build credibility on Meta platforms.</p>
-        {/* Update the button to navigate to the ValidationPage */}
         <button onClick={() => navigate('/validation')} className="cta-btn">
           Apply Now
         </button>
