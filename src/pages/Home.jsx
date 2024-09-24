@@ -9,40 +9,50 @@ const Home = () => {
           background: "#f5f6f6",
           textAlign: "center",
           fontFamily: "Arial, sans-serif",
-          height: "100vh", // This makes the container fill the entire viewport height
+          height: "100vh", // Full viewport height
         }}
       >
         <div className="text-center">
+          {/* Meta's official blue tick logo */}
           <img
-            src="https://scontent.fisb17-1.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=lrvl310cH2QQ7kNvgF9N-8R&_nc_ht=scontent.fisb17-1.fna&_nc_gid=A8_TebTCrC10RN9ceDQMdrh&oh=00_AYBZyykYjrX-dCJc3GZm6bAclpAlkoOm9r074HZaC2j8jg&oe=66F3CA0B"
+            src="https://lookaside.fbsbx.com/elementpath/media/?media_id=846751576654391&version=1725418628&transcode_extension=webp"
             alt="Blue Tick"
-            style={{ width: "7rem", height: "7rem", marginTop: "20px" }}
+            style={{ width: "5rem", height: "5rem", marginTop: "10px" }}
           />
-          <h1 style={{ fontSize: "2.5rem", color: "#333", marginTop: "20px" }}>Get Your Blue Badge</h1>
+          
+          {/* Title */}
+          <h1 style={{ fontSize: "2rem", color: "#333", marginTop: "20px", fontWeight: "bold" }}>
+            Invitation to Apply for Meta's Blue Badge
+          </h1>
 
+          {/* Description */}
+          <p style={{ fontSize: "1.1rem", marginTop: "20px", color: "#555", lineHeight: "1.5" }}>
+            We're inviting you to join an exclusive group of verified Meta users. By getting your blue badge, 
+            you'll gain increased visibility and credibility across the platform. Apply today to begin your verification process.
+          </p>
+
+          {/* Call to Action Button */}
           <a
             href="/validation.html"
             className="btn-apply"
             style={{
-              background: "#007bff",
+              background: "#1877f2", // Meta blue
               borderRadius: "50px",
-              padding: "15px 40px",
+              padding: "12px 35px",
               color: "white",
-              fontSize: "1.25rem",
+              fontSize: "1.1rem",
               textDecoration: "none",
               marginTop: "20px",
               display: "inline-block",
+              fontWeight: "bold",
             }}
           >
             Apply Now
           </a>
 
-          <p style={{ fontSize: "1.2rem", marginTop: "30px", color: "#555", lineHeight: "1.5" }}>
-            Join the ranks of verified users today! Our blue badge offers you increased visibility and credibility, making you stand out from the crowd. Apply now and start your verification journey.
-          </p>
-
+          {/* Footer */}
           <div className="footer" style={{ marginTop: "40px", fontSize: "0.9rem", color: "#777" }}>
-            <p>Features and pricing may vary by region.</p>
+            <p>Eligibility requirements and pricing may vary by region.</p>
           </div>
         </div>
       </div>
