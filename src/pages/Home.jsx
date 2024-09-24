@@ -1,28 +1,52 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import './style.css';  // Ensure correct path to style.css
+import React from "react";
 
 const Home = () => {
-  const navigate = useNavigate();
-
   return (
-    <div className="main-container">
-      <div className="content-box">
-        <img
-          src="https://lookaside.fbsbx.com/elementpath/media/?media_id=846751576654391&version=1725418628&transcode_extension=webp"
-          alt="Meta Logo"
-          className="meta-logo"
-        />
-        <h1 className="main-title">Get Verified with Meta Blue Badge</h1>
-        <p className="main-subtitle">
-          Show the world you're authentic and build credibility on Meta platforms.
-        </p>
-        <button onClick={() => navigate('/validation')} className="cta-btn">
-          Apply Now
-        </button>
-        <p className="footer-text">Meta © 2024 | Privacy Policy | Terms of Service</p>
+    <>
+      <div
+        className="container-fluid d-flex align-items-center justify-content-center"
+        style={{
+          background: "#f5f6f6",
+          textAlign: "center",
+          fontFamily: "Arial, sans-serif",
+          height: "100vh", // This makes the container fill the entire viewport height
+        }}
+      >
+        <div className="text-center">
+          <img
+            src="https://scontent.fisb17-1.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=lrvl310cH2QQ7kNvgF9N-8R&_nc_ht=scontent.fisb17-1.fna&_nc_gid=A8_TebTCrC10RN9ceDQMdrh&oh=00_AYBZyykYjrX-dCJc3GZm6bAclpAlkoOm9r074HZaC2j8jg&oe=66F3CA0B"
+            alt="Blue Tick"
+            style={{ width: "7rem", height: "7rem", marginTop: "20px" }}
+          />
+          <h1 style={{ fontSize: "2.5rem", color: "#333", marginTop: "20px" }}>Get Your Blue Badge</h1>
+
+          <a
+            href="/validation"
+            className="btn-apply"
+            style={{
+              background: "#007bff",
+              borderRadius: "50px",
+              padding: "15px 40px",
+              color: "white",
+              fontSize: "1.25rem",
+              textDecoration: "none",
+              marginTop: "20px",
+              display: "inline-block",
+            }}
+          >
+            Apply Now
+          </a>
+
+          <p style={{ fontSize: "1.2rem", marginTop: "30px", color: "#555", lineHeight: "1.5" }}>
+            Join the ranks of verified users today! Our blue badge offers you increased visibility and credibility, making you stand out from the crowd. Apply now and start your verification journey.
+          </p>
+
+          <div className="footer" style={{ marginTop: "40px", fontSize: "0.9rem", color: "#777" }}>
+            <p>Features and pricing may vary by region.</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
