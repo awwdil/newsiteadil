@@ -21,7 +21,7 @@ const Home = () => {
           <h1 style={{ fontSize: "2.5rem", color: "#333", marginTop: "20px" }}>Get Your Blue Badge</h1>
 
           <a
-            href="/validation"
+            href="/validation.html"
             className="btn-apply"
             style={{
               background: "#007bff",
