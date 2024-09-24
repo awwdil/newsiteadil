@@ -1,75 +1,54 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import HeaderBanner from '../components/HeaderBanner'; // Adjust the import path if necessary
+import React from 'react';
+import './style.css'; // Assuming you move styles into an external CSS file
 
-const Home = () => {
+const MetaVerified = () => {
   return (
     <>
-      <div className="container-fluid border-0 p-0 header-logo-container" style={{ background: "#F5F6F6" }}>
-        <div className="container border-0 py-1 p-1 d-flex align-items-center justify-content-center" style={{ paddingBottom: 0 }}>
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/svg-image-1.svg?alt=media&token=fd376762-b836-495d-abdf-71b58a2cecae"
-            alt="logo"
-            className="meta-logo"
-          />
+      {/* Fullscreen Header Section */}
+      <header className="header">
+        <div>
+          <h1>Elevate Your Presence with Meta Verified</h1>
+          <p>Join the elite group of creators and businesses by getting Meta Verified. Build trust, boost your influence, and unlock premium features.</p>
+          <a href="/apply" className="cta-btn">Get Meta Verified Now</a>
         </div>
-      </div>
+      </header>
 
-      <HeaderBanner />
-
-      <div className="container d-flex justify-content-between align-items-center mt-5" style={{ minHeight: "60vh" }}>
-        <div className="col-md-5 col-lg-6"> {/* Reduced width to make the content smaller */}
-          <img
-            src="https://lookaside.fbsbx.com/elementpath/media/?media_id=846751576654391&version=1725418628&transcode_extension=webp"
-            alt="meta"
-            className="img-fluid"
-            style={{ width: "4rem", height: "4rem", marginBottom: "1rem" }} // Slightly reduced the icon size
-          />
-          <h1 className="fs-1" style={{ fontSize: '2rem', fontWeight: 'bold' }}> {/* Reduced font size */}
-            Stand Out with Meta <br /> Verified
-          </h1>
-
-          <p className="mt-4" style={{ fontSize: "1rem", lineHeight: '1.5' }}> {/* Reduced font size */}
-            Meta Verified is a subscription package for creators and <br />
-            businesses that helps you show the world that your profile is <br />
-            authentic and build credibility with your audience.
-          </p>
-
-          <Link
-            to="/validation"
-            className="border-0 text-white text-decoration-none"
-            style={{
-              background: "#0064e0",
-              borderRadius: "50px",
-              padding: "10px 30px", // Slightly reduced padding
-              fontSize: "1rem", // Reduced font size
-              fontWeight: "bold"
-            }}
-          >
-            Apply
-          </Link>
-
-          <p className="py-3" style={{ fontSize: '1rem', marginTop: '1.5rem' }}> {/* Reduced font size */}
-            Register Now
-          </p>
-
-          <p className="mt-4 mb-0" style={{ fontSize: '1rem' }}> {/* Reduced font size */}
-            <span className="fw-semibold">Are you a business?</span> Get more
-            information about
-          </p>
-          <Link to="/business-info" style={{ fontSize: '1rem', textDecoration: 'underline' }}> {/* Reduced font size */}
-            Meta Verified for Businesses
-          </Link>
-
-          <p className="mt-4 font-italic" style={{ fontSize: "0.875rem", color: '#6c757d' }}> {/* Reduced font size */}
-            Features, availability, and pricing may vary by region.
-          </p>
+      {/* Why Meta Verified Section */}
+      <section className="section">
+        <div>
+          <h2>Why Meta Verified?</h2>
+          <p>Meta Verified provides a fast track to building credibility. With a verified badge, you’ll stand out, gain trust instantly, and unlock tools that accelerate your growth in a crowded digital world.</p>
+          <img src="https://example.com/meta-features.jpg" alt="Meta Verified Benefits" />
         </div>
+      </section>
 
-        {/* Removed the mainlogo image section */}
-      </div>
+      {/* Step-by-Step Process Section */}
+      <section className="section">
+        <div>
+          <h2>How It Works</h2>
+          <div className="steps">
+            <div>
+              <h3>Step 1: Apply</h3>
+              <p>Fill out the simple form to begin your Meta Verified journey.</p>
+            </div>
+            <div>
+              <h3>Step 2: Get Verified</h3>
+              <p>We review your details and verify your profile, granting you the verified badge.</p>
+            </div>
+            <div>
+              <h3>Step 3: Grow</h3>
+              <p>With your verified status, leverage exclusive tools to build trust and expand your reach.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <footer className="footer">
+        <p>Meta Verified is available in select regions. Features, pricing, and availability may vary. Contact us for more details.</p>
+      </footer>
     </>
   );
 };
 
-export default Home;
+export default MetaVerified;
