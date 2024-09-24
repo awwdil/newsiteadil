@@ -1,135 +1,117 @@
-* {
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Arial', sans-serif;
   background-color: #f0f4f8;
-  color: #333;
 }
-.header {
-  height: 100vh;
-  background: linear-gradient(45deg, #0064e0, #00a3ff);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-.header h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  animation: slideIn 1s ease-in-out;
-}
-.header p {
-  font-size: 1.5rem;
-  margin-bottom: 40px;
-  line-height: 1.6;
-  animation: fadeIn 1.2s ease-in-out;
-}
-.header .cta-btn {
-  background-color: white;
-  color: #0064e0;
-  padding: 15px 50px;
-  font-size: 1.3rem;
-  border-radius: 30px;
+
+a {
   text-decoration: none;
   font-weight: bold;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  animation: fadeIn 1.4s ease-in-out;
+  color: #0064e0;
 }
-.header .cta-btn:hover {
-  background-color: #0056cc;
-  transform: translateY(-5px);
+
+a:hover {
+  color: #004bb5;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #0064e0;
   color: white;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes slideIn {
-  from { transform: translateY(50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-.section {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 60px 20px;
-}
-.section:nth-child(odd) {
-  background-color: #fff;
-}
-.section:nth-child(even) {
-  background-color: #f0f4f8;
-}
-.section h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #333;
-  text-transform: uppercase;
-  animation: fadeIn 1s ease-in-out;
-}
-.section p {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-  color: #666;
-  line-height: 1.6;
-  max-width: 800px;
-  animation: fadeIn 1.2s ease-in-out;
-}
-.section img {
-  max-width: 500px;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-  animation: fadeIn 1.4s ease-in-out;
 }
 
-.steps {
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: white;
+  color: #0064e0;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #004bb5;
+  color: white;
+}
+
+/* Features Section */
+.features-section {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.features-grid {
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
-  animation: fadeIn 1.4s ease-in-out;
-}
-.steps div {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  width: 30%;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-.steps div:hover {
-  transform: translateY(-10px);
-}
-.steps h3 {
-  font-size: 1.7rem;
-  margin-bottom: 10px;
-  color: #0064e0;
-}
-.steps p {
-  font-size: 1.1rem;
-  color: #666;
+  margin-top: 40px;
 }
 
-.footer {
+.feature {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 1.8rem;
+  color: #0064e0;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Call-to-Action Section */
+.cta-section {
   background-color: #0064e0;
   color: white;
   text-align: center;
-  padding: 40px;
+  padding: 80px 20px;
 }
-.footer p {
-  font-size: 1rem;
+
+.cta-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
+
+.cta-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn-large {
+  background-color: white;
+  color: #0064e0;
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease

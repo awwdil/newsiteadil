@@ -1,54 +1,50 @@
 import React from 'react';
-import './style.css'; // Assuming you move styles into an external CSS file
+import './Home.css'; // Assuming styles will be stored here
 
-const MetaVerified = () => {
+const Home = () => {
   return (
-    <>
-      {/* Fullscreen Header Section */}
-      <header className="header">
-        <div>
-          <h1>Elevate Your Presence with Meta Verified</h1>
-          <p>Join the elite group of creators and businesses by getting Meta Verified. Build trust, boost your influence, and unlock premium features.</p>
-          <a href="/apply" className="cta-btn">Get Meta Verified Now</a>
-        </div>
-      </header>
-
-      {/* Why Meta Verified Section */}
-      <section className="section">
-        <div>
-          <h2>Why Meta Verified?</h2>
-          <p>Meta Verified provides a fast track to building credibility. With a verified badge, you’ll stand out, gain trust instantly, and unlock tools that accelerate your growth in a crowded digital world.</p>
-          <img src="https://example.com/meta-features.jpg" alt="Meta Verified Benefits" />
+    <div>
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1>Welcome to Meta</h1>
+          <p>Bringing the world closer together. Empowering people to build communities and grow businesses.</p>
+          <a href="/apply" className="cta-btn">Get Started</a>
         </div>
       </section>
 
-      {/* Step-by-Step Process Section */}
-      <section className="section">
-        <div>
-          <h2>How It Works</h2>
-          <div className="steps">
-            <div>
-              <h3>Step 1: Apply</h3>
-              <p>Fill out the simple form to begin your Meta Verified journey.</p>
-            </div>
-            <div>
-              <h3>Step 2: Get Verified</h3>
-              <p>We review your details and verify your profile, granting you the verified badge.</p>
-            </div>
-            <div>
-              <h3>Step 3: Grow</h3>
-              <p>With your verified status, leverage exclusive tools to build trust and expand your reach.</p>
-            </div>
+      {/* Features Section */}
+      <section className="features-section">
+        <h2>Why Choose Meta?</h2>
+        <div className="features-grid">
+          <div className="feature">
+            <h3>Connect</h3>
+            <p>Join millions of people in creating meaningful connections and discovering new opportunities.</p>
+          </div>
+          <div className="feature">
+            <h3>Engage</h3>
+            <p>Build trust and relationships by engaging with communities that matter to you.</p>
+          </div>
+          <div className="feature">
+            <h3>Grow</h3>
+            <p>Expand your network, grow your business, and reach new audiences with the power of Meta.</p>
           </div>
         </div>
       </section>
 
-      {/* Footer Section */}
+      {/* Call-to-Action Section */}
+      <section className="cta-section">
+        <h2>Join Us Today</h2>
+        <p>Empower your personal or business profile with Meta Verified. Build trust and unlock new opportunities.</p>
+        <a href="/apply" className="cta-btn-large">Apply Now</a>
+      </section>
+
+      {/* Footer */}
       <footer className="footer">
-        <p>Meta Verified is available in select regions. Features, pricing, and availability may vary. Contact us for more details.</p>
+        <p>Meta © 2024 | Privacy Policy | Terms of Service</p>
       </footer>
-    </>
+    </div>
   );
 };
 
-export default MetaVerified;
+export default Home;
