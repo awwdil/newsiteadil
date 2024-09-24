@@ -12,7 +12,7 @@ const Home = () => {
         />
         <h1 className="main-title">Get Verified with Meta Blue Badge</h1>
         <p className="main-subtitle">Show the world you're authentic and build credibility on Meta platforms.</p>
-        <a href="/validation" className="cta-btn">Apply Now</a>
+        <a href="/Validation" className="cta-btn">Apply Now</a>
         <p className="footer-text">Meta © 2024 | Privacy Policy | Terms of Service</p>
       </div>
     </div>
