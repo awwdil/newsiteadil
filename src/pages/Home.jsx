@@ -1,22 +1,20 @@
 import React from 'react';
-import './style.css'; // Ensure this points to your CSS file
+import './style.css'; // Ensure this path is correct for your styles
 
 const Home = () => {
   return (
-    <div className="home-container">
-      {/* Notification Banner Section */}
-      <section className="notification-banner">
-        <div className="notification-content">
-          <h1>Meta Verified</h1>
-          <p>Get your profile verified and build trust across platforms.</p>
-          <a href="/apply" className="cta-btn">Apply Now</a>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p>Meta © 2024 | Privacy Policy | Terms of Service</p>
-      </footer>
+    <div className="main-container">
+      <div className="content-box">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Meta_Platforms_Inc._logo.svg/512px-Meta_Platforms_Inc._logo.svg.png"
+          alt="Meta Logo"
+          className="meta-logo"
+        />
+        <h1 className="main-title">Get Verified with Meta Blue Badge</h1>
+        <p className="main-subtitle">Show the world you're authentic and build credibility on Meta platforms.</p>
+        <a href="/apply" className="cta-btn">Apply Now</a>
+        <p className="footer-text">Meta © 2024 | Privacy Policy | Terms of Service</p>
+      </div>
     </div>
   );
 };
