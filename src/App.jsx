@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home'; // Updated path for Home
-import ValidationPage from './pages/ValidationPage'; // Updated path for ValidationPage
-import ThanksPage from './pages/ThanksPage'; // Updated path for ThanksPage
+import Home from './pages/Home'; // Path to Home
+import ValidationPage from './pages/ValidationPage'; // Path to ValidationPage
+import ThanksPage from './pages/ThanksPage'; // Path to ThanksPage
 
 function App() {
   return (

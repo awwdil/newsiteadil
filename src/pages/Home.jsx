@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../style.css'; // Updated relative path to style.css
+import './style.css'; // Updated relative path to style.css
 
 const Home = () => {
   const navigate = useNavigate();

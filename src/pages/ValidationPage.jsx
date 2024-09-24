@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import '../style.css'; // Updated relative path to style.css
+import './style.css'; // Updated relative path to style.css
 
 const ValidationPage = () => {
   const form = useRef();
