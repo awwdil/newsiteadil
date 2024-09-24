@@ -17,8 +17,8 @@ a:hover {
   color: #004bb5;
 }
 
-/* Hero Section */
-.hero-section {
+/* Notification Banner Section */
+.notification-banner {
   background-color: #0064e0;
   color: white;
   height: 100vh;
@@ -28,13 +28,18 @@ a:hover {
   text-align: center;
 }
 
-.hero-content h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
-  font-weight: bold;
+.notification-content {
+  max-width: 600px;
+  padding: 20px;
 }
 
-.hero-content p {
+.notification-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.notification-content p {
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
@@ -42,7 +47,7 @@ a:hover {
 .cta-btn {
   background-color: white;
   color: #0064e0;
-  padding: 15px 30px;
+  padding: 15px 40px;
   font-size: 1.2rem;
   border-radius: 50px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -53,81 +58,15 @@ a:hover {
   color: white;
 }
 
-/* Features Section */
-.features-section {
-  padding: 60px 20px;
-  background-color: white;
-  text-align: center;
-}
-
-.features-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-.features-grid {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
-}
-
-.feature {
-  background-color: #f0f4f8;
-  padding: 20px;
-  border-radius: 10px;
-  width: 30%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.feature h3 {
-  font-size: 1.8rem;
-  color: #0064e0;
-}
-
-.feature p {
-  font-size: 1.1rem;
-  margin-top: 10px;
-  color: #555;
-}
-
-/* Call-to-Action Section */
-.cta-section {
-  background-color: #0064e0;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.cta-section h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.cta-section p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
-.cta-btn-large {
-  background-color: white;
-  color: #0064e0;
-  padding: 20px 50px;
-  font-size: 1.5rem;
-  border-radius: 50px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta-btn-large:hover {
-  background-color: #004bb5;
-  color: white;
-}
-
 /* Footer */
 .footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer p {
