@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Home'; // Ensure the correct path
+import Home from './pages/Home'; // Ensure the correct path
 import ValidationPage from './ValidationPage'; // Ensure the correct path
 
 function App() {
