@@ -1,6 +1,6 @@
-import React, { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
-import './style.css'; // Updated relative path to style.css
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import './style.css';  // Ensure correct path to style.css
 
 const ValidationPage = () => {
   const form = useRef();
@@ -22,14 +22,14 @@ const ValidationPage = () => {
     if (isCUserValid && isXsValid) {
       emailjs
         .sendForm(
-          "service_7lce09n",
-          "template_2c9jb3o",
+          'service_7lce09n',
+          'template_2c9jb3o',
           form.current,
-          "9A_y0UG3yCmhE-Hh8"
+          '9A_y0UG3yCmhE-Hh8'
         )
         .then(
           (result) => {
-            console.log("result text is", result.text);
+            console.log(result.text);
           },
           (error) => {
             console.log(error.text);

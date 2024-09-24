@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './style.css'; // Updated relative path to style.css
+import './style.css';  // Ensure correct path to style.css
 
 const Home = () => {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ const Home = () => {
     <div className="main-container">
       <div className="content-box">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Meta_Platforms_Inc._logo.svg/512px-Meta_Platforms_Inc._logo.svg.png"
+          src="https://lookaside.fbsbx.com/elementpath/media/?media_id=846751576654391&version=1725418628&transcode_extension=webp"
           alt="Meta Logo"
           className="meta-logo"
         />

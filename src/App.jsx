@@ -1,7 +1,7 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import ValidationPage from './pages/ValidationPage';
-import ThanksPage from './pages/ThanksPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';  // Ensure correct path for Home component
+import ValidationPage from './pages/ValidationPage';  // Ensure correct path for ValidationPage component
+import ThanksPage from './pages/ThanksPage';  // Ensure correct path for ThanksPage component
 
 function App() {
   return (
