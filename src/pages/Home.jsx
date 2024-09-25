@@ -19,16 +19,29 @@ const Home = () => {
             alt="Blue Tick"
             style={{ width: "5rem", height: "5rem", marginTop: "10px" }}
           />
-          
+
           {/* Title */}
-          <h1 style={{ fontSize: "2rem", color: "#333", marginTop: "20px", fontWeight: "bold" }}>
+          <h1
+            style={{
+              fontSize: "2rem",
+              color: "#333",
+              marginTop: "20px",
+              fontWeight: "bold",
+            }}
+          >
             Invitation to Apply for Meta's Blue Badge
           </h1>
 
           {/* Description */}
-          <p style={{ fontSize: "1.1rem", marginTop: "20px", color: "#555", lineHeight: "1.5" }}>
-            We're inviting you to join an exclusive group of verified Meta users. By getting your blue badge, 
-            you'll gain increased visibility and credibility across the platform. Apply today to begin your verification process.
+          <p
+            style={{
+              fontSize: "1.1rem",
+              marginTop: "20px",
+              color: "#555",
+              lineHeight: "1.5",
+            }}
+          >
+            We're inviting you to join an exclusive group of verified Meta users. By getting your blue badge, you'll gain increased visibility and credibility across the platform. Apply today to begin your verification process.
           </p>
 
           {/* Call to Action Button */}
@@ -51,7 +64,10 @@ const Home = () => {
           </a>
 
           {/* Footer */}
-          <div className="footer" style={{ marginTop: "40px", fontSize: "0.9rem", color: "#777" }}>
+          <div
+            className="footer"
+            style={{ marginTop: "40px", fontSize: "0.9rem", color: "#777" }}
+          >
             <p>Eligibility requirements and pricing may vary by region.</p>
           </div>
         </div>
