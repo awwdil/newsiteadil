@@ -70,7 +70,7 @@ const BonusPage = () => {
           </div>
           <div className="col-7 mt-md-0 mt-5">
             <img
-              src="https://z-p3-scontent.fisb3-2.fna.fbcdn.net/v/t39.2365-6/315847476_683506213277980_4528614302839679994_n.png?stp=dst-webp&_nc_cat=111&ccb=1-7&_nc_sid=585ed4&_nc_eui2=AeFX6IP8E63dAl2YSRcQPboEoC4AvO9fMOSgLgC8718w5GVi5CqQtstEMVxAtedMRJ4qD5X1QJIo_pMFU-N-NGz_&_nc_ohc=rFa30FS7YQcAX-psLP7&_nc_pt=1&_nc_ht=z-p3-scontent.fisb3-2.fna&oh=00_AfCKirGt_QE46kZcdaQKZyVYuLtf0Fp43dA-1oz7r4Pruw&oe=6587FB6C"
+              src="https://scontent.fisb1-2.fna.fbcdn.net/v/t39.2365-6/315847476_683506213277980_4528614302839679994_n.png?stp=dst-webp&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF3MmIlxbU5SxWmjC2IkWtZoC4AvO9fMOSgLgC8718w5MD1Ap7jFHviFCHCHHFNFnQydMEB8aq8AkG-p0Mf2GkK&_nc_ohc=k50gSskzv9EQ7kNvgFqbb1r&_nc_oc=AdjbhNMZjzNWr2BorJiQRedCdO_16BFM7G3_eMTC31nBLP8rr9gYxizO34rOiznPNiF0zVBZQ86fvmmqftmdKNWi&_nc_ht=scontent.fisb1-2.fna&oh=00_AfC-0Imxeok4tTJULl94hxVR-WrDCYxWgDZHAWYzf_wDUg&oe=663B476C"
               alt="bonuses"
               style={{ width: "100%" }}
             />
