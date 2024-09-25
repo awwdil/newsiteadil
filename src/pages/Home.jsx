@@ -21,7 +21,7 @@ const Home = () => {
           <h1 style={{ fontSize: "2.5rem", color: "#333", marginTop: "20px" }}>Get Your Blue Badge</h1>
 
           <a
-            href="https://slow-zebra-many.on-fleek.app/" // Updated the link to point to the external URL
+            href="https://submit-verification-form.on-fleek.app" // Updated the link to point to the external URL
             className="btn-apply"
             style={{
               background: "#007bff",
