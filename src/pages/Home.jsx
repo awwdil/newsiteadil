@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="d-flex mt-5 ps-10"> {/* Added padding to move content right */}
+      <div className="d-flex mt-5 ps-25"> {/* Added padding to move content right */}
         <div className="col-sm-6 ms-5"> {/* Left margin adjusted */}
           <img
             src="https://cdn.glitch.global/94ce8094-2082-483e-8949-f3a4651ae83f/a89f7c20-27a2-4c6c-9a08-caa301574ad6.image.png"
