@@ -6,19 +6,10 @@ const Home = () => {
   return (
     <>
 
-      <div className="container-fluid border-0 p-0" style={{ background: "#F5F6F6" }}>
-        <div className="container border-0 py-1 p-1">
-          <img
-            src="https://scontent.fisb6-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=8UNAKTXRBNEQ7kNvgHuntHV&_nc_ht=scontent.fisb6-1.fna&_nc_gid=AZTtM4EwcMoWNnmz7hyFdwn&oh=00_AYBh7a93rrQKO944lgsN-9HPgpp1yYNDZix_1fp-Zmo0aA&oe=67016DF9"
-            alt="logo"
-            style={{ width: "6rem", height: "6rem" }}
-          />
-        </div>
-      </div>
       <div className="d-flex justify-content-center mt-5">
         <div className="col-sm-6 mt-5 ms-5">
           <img
-            src="https://lookaside.fbsbx.com/elementpath/media/?media_id=846751576654391&version=1725418628&transcode_extension=webp"
+            src="https://cdn.glitch.global/94ce8094-2082-483e-8949-f3a4651ae83f/a89f7c20-27a2-4c6c-9a08-caa301574ad6.image.png"
             alt="meta"
             style={{ width: "4rem", height: "4rem" }}
           />
