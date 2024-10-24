@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="d-flex justify-content-center mt-5">
-        <div className="col-sm-6 mt-5 ms-5">
+      <div className="d-flex mt-5">
+        <div className="col-sm-6 ms-5"> {/* Adjusted the margin for spacing */}
           <img
             src="https://cdn.glitch.global/94ce8094-2082-483e-8949-f3a4651ae83f/a89f7c20-27a2-4c6c-9a08-caa301574ad6.image.png"
             alt="meta"
@@ -52,16 +52,6 @@ const Home = () => {
             Features, availability, and pricing may vary by region.
           </p>
         </div>
-
-        {/* Remove this entire div to get rid of the large image */}
-        {/* <div
-          className="col-sm-5 d-none d-sm-block img-smal order-2 img-fluid"
-          style={{
-            backgroundImage: `url(${test})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div> */}
       </div>
     </>
   );
