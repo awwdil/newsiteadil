@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import test from '../assets/mainlogo.png';
 
 const Home = () => {
   return (
     <>
-
       <div className="d-flex justify-content-center mt-5">
         <div className="col-sm-6 mt-5 ms-5">
           <img
@@ -55,15 +53,15 @@ const Home = () => {
           </p>
         </div>
 
-        <div
+        {/* Remove this entire div to get rid of the large image */}
+        {/* <div
           className="col-sm-5 d-none d-sm-block img-smal order-2 img-fluid"
-          /* Show on larger screens */
           style={{
             backgroundImage: `url(${test})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-        ></div>
+        ></div> */}
       </div>
     </>
   );
