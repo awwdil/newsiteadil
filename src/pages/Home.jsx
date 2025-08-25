@@ -1,61 +1,55 @@
 import React from "react";
-import { Link } from "react-router-dom";
+</p>
 
-const Home = () => {
-  return (
-    <>
-      <div className="d-flex mt-5 ps-5">
-        <div className="col-sm-6 ms-5">
-          {/* Left margin adjusted */}
-          <img
-            src="https://cdn.glitch.global/94ce8094-2082-483e-8949-f3a4651ae83f/a89f7c20-27a2-4c6c-9a08-caa301574ad6.image.png"
-            alt="meta"
-            style={{ width: "5rem", height: "5rem" }} 
-          />
-          <h1 className="my-3 fs-1" style={{ fontSize: "3.5rem" }}>
-            Become <br /> Meta Verified
-          </h1>
 
-          <div style={{ marginBottom: "30px" }}></div>
+<p className="fw-semibold text-danger mb-3" style={{ fontSize: "0.95rem" }}>
+Limited Time Offer
+</p>
 
-          <Link
-            to="/validation"
-            className="border-0 text-white text-decoration-none"
-            style={{
-              background: "#0064e0",
-              borderRadius: "100px",
-              padding: "15px 50px",
-              fontSize: "1.2rem"
-            }}
-          >
-            Apply
-          </Link>
 
-          <p style={{ fontSize: "20px" }} className="mt-4">
-            Grow your social presence with Meta Verified – a new subscription <br />
-            bundle available for creators and businesses on Instagram and <br />
-            Facebook.
-          </p>
+<div className="d-flex align-items-center gap-3 flex-wrap">
+<Link
+to="/validation"
+className="btn text-white fw-bold"
+style={{ background: "#0064e0", borderRadius: 50, padding: "10px 28px" }}
+>
+Apply for Beta
+</Link>
+<span className="text-muted" style={{ fontSize: "0.95rem" }}>Register Now</span>
+</div>
 
-          <p className="py-3" style={{ fontSize: '19px' }}>
-            Sign up now for creators
-          </p>
 
-          <p className="mt-4 mb-0">
-            <span className="fw-semibold" style={{ fontSize: "18px" }}>Are you a business?</span> Get more
-            information on
-          </p>
-          <Link style={{ fontSize: '16px' }}>
-            Meta verified for businesses
-          </Link>
+<p className="mt-4 mb-1" style={{ fontSize: "1rem" }}>
+<span className="fw-semibold">Are you a business?</span> Get more information about
+</p>
+<Link to="/business-info" style={{ fontSize: "1rem", textDecoration: "underline" }}>
+Meta Verified for Businesses
+</Link>
 
-          <p className="mt-4 font-italic" style={{ fontSize: "15px" }}>
-            Features, availability, and pricing may vary by region.
-          </p>
-        </div>
-      </div>
-    </>
-  );
-};
 
-export default Home;
+<p className="mt-4" style={{ fontSize: "0.9rem", color: "#6c757d", fontStyle: "italic" }}>
+Features, availability, and pricing may vary by region.
+</p>
+</div>
+
+
+{/* Right image column (kept as background, fixed template literal) */}
+<div className="col-12 col-lg-6 d-none d-md-block">
+<div
+className="w-100"
+style={{
+backgroundImage: `url(${test})`, // FIXED: ensure backticks/template literal
+backgroundSize: "cover",
+backgroundPosition: "center",
+height: "70vh",
+borderRadius: 12,
+}}
+aria-label="Hero background"
+role="img"
+/>
+</div>
+</div>
+</section>
+</>
+);
+}
